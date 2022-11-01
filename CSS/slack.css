@@ -39,3 +39,13 @@ hr{
 .footer-A-text:hover{
     color: rgb(49, 49, 179);
 }
+
+/* footer part B */
+.footerPartB{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerPartB-1{
+    display: flex;
+}
