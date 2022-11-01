@@ -18,10 +18,22 @@ hr{
 .footerPartA{
     display: flex;
     justify-content: space-between;
+    padding: 4rem 12rem 3rem 4rem;
 }
 
 .footer-1 img{
     width: 50%;
+}
+
+.footerPartA h3{
+    font-size: 0.9rem;
+    padding: 0 0 20px 0;
+}
+
+.footer-A-text{
+    font-size: 15px;
+    line-height: 43px;
+    color: rgb(37, 37, 36);
 }
 
 .footer-A-text:hover{
