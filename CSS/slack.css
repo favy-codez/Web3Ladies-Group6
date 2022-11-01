@@ -4,3 +4,26 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+/* styling for horizontal line */
+hr{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: #fff 1.5px;
+    border-style: inset;
+}
+
+/* FOOTER SECTION */
+.footerPartA{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-1 img{
+    width: 50%;
+}
+
+.footer-A-text:hover{
+    color: rgb(49, 49, 179);
+}
