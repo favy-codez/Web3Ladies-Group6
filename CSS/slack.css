@@ -10,7 +10,7 @@ hr{
     display: block;
     margin-left: 5%;
     margin-right: 5%;
-    border: #fff 1.5px;
+    border: #fff 1px;
     border-style: inset;
 }
 
@@ -44,8 +44,19 @@ hr{
 .footerPartB{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 6rem 0rem 5rem;
 }
 
 .footerPartB-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerPartB-a{
+    display: flex;
+}
+
+.footerPartB-b{
     display: flex;
 }
