@@ -1,3 +1,4 @@
+/* GENERAL STYLING */
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +15,51 @@ hr{
     border-style: inset;
 }
 
-/* FOOTER SECTION */
+/* BARAKATS'S STYLING  */
+
+
+
+/*END OF BARAKATS'S STYLING  */
+
+/* NOT TAKEN SECTION */
+
+
+/*END OF NOT TAKEN SECTION */
+
+
+/* BEGINNING OF BUKOLA'S STYLING */
+
+
+
+/* END OF BUKOLA'S STYLING */
+
+
+/* NOT TAKEN SECTION - SECTION FIVE */
+
+
+/*END OF NOT TAKEN SECTION */
+
+
+/* NOT TAKEN SECTION- SECTION SIX */
+
+
+/*END OF NOT TAKEN SECTION */
+
+
+/* BEGINNING OF JOY'S STYLING   */
+
+
+
+/* END OF JOY'S STYLING  */
+
+
+/* BEGINNING OF HAPPINESS'S STYLING */
+
+
+/* END OF HAPPINESS'S STYLING */
+
+
+/* FAVOURS STYLING - FOOTER */
 .footerPartA{
     display: flex;
     justify-content: space-between;
@@ -60,3 +105,5 @@ hr{
 .footerPartB-b{
     display: flex;
 }
+
+/* MEDIA QUERY SECTION */
