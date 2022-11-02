@@ -24,6 +24,7 @@ hr{
 /* NOT TAKEN SECTION - section-two */
 
 
+
 /*END OF NOT TAKEN SECTION */
 
 
@@ -60,10 +61,6 @@ hr{
 
 
 /* FAVOURS STYLING - FOOTER */
-.section-footer{
-   
-}
-
 .footerPartA{
     display: flex;
     justify-content: space-between;
