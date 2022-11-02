@@ -234,6 +234,7 @@ hr{
 #section-five-text-4{
     width: 80%;
 }
+
 /*END OF FAVOUR'S SECTION-FIVE */
 
 
@@ -270,6 +271,11 @@ hr{
 
 .footer-1 img{
     width: 47%;
+    display: block;
+}
+
+.footer-1-slack-icon{
+    display: none;
 }
 
 .footerPartA h3{
@@ -386,6 +392,9 @@ hr{
     .footer-1{
         display: none;
     }
+    .footer-1-slack-icon{
+        display: block;
+    }
     .footer-1-slack-icon img{
         width: 7rem;
         margin: 0 0 0 4rem;
@@ -407,7 +416,10 @@ hr{
 
 @media screen and (max-width:768px){
     /* MEDIA QUERY FOR- SECTION FIVE */
-    
+    .section-five-partB{
+        gap: 0rem;
+        padding: 0 3rem 0 4rem;
+    }
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
