@@ -366,4 +366,78 @@ hr{
 /*END OF FAVOURS STYLING - FOOTER */
 
 
-/* MEDIA QUERY SECTION */
+/*****************************************MEDIA QUERY SECTION ********************************************************/
+
+@media screen and (max-width:992px){
+    /* BEGINNING OF FAVOUR- SECTION FIVE */
+    .handshake , .girl-laptop, .barChart, .padlock, .emoji-1, .chart{
+        display: none;
+    }
+    .section-five h2{
+        font-size:2rem ;
+    }
+    .section-five-partB{
+        gap: 0.5rem;
+        padding: 0 8rem 0 8rem;
+    }
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    .footer-1{
+        display: none;
+    }
+    .footer-1-slack-icon img{
+        width: 7rem;
+        margin: 0 0 0 4rem;
+    }
+    .footerPartA{
+        padding: 4rem 4rem 2rem 6rem;
+    }
+    .footerPartB{
+        padding: 2rem 5rem 0 1rem;
+    }
+    .footerPartB-2{
+        padding: 0 0 2rem 3rem;
+    }
+    .footerPartB-a p{
+        font-size: 10px;
+    }
+    /* END OF FAVOUR- FOOTER */
+}
+
+@media screen and (max-width:768px){
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+@media screen and (max-width:576px){
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+@media screen and (max-width:375px){
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+
+
+
