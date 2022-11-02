@@ -135,12 +135,14 @@ hr{
    font-weight: 600;
    margin-top: 0;
    display: flex;
+   gap: 3px;
 }
 #footer-download div{
     line-height: 25px;
 }
 .download-icon{
     font-size: 1.3rem;
+    font-weight: 100;
 }
 
 .footer-icon{
@@ -157,11 +159,12 @@ hr{
     font-weight: 300;
 }
 
-.footer-change{
+#footer-change{
     display: flex;
+    gap: 3px;
 }
 
-.footer-change div{
+#footer-change div{
     line-height: 25px;
 }
 
