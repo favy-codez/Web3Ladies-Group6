@@ -11,7 +11,7 @@ hr{
     display: block;
     margin-left: 5%;
     margin-right: 5%;
-    border: #fff 1px;
+    border: #EBEAEB 0.5px;
     border-style: inset;
 }
 
@@ -60,14 +60,22 @@ hr{
 
 
 /* FAVOURS STYLING - FOOTER */
+.section-footer{
+   
+}
+
 .footerPartA{
     display: flex;
     justify-content: space-between;
-    padding: 4rem 12rem 3rem 4rem;
+    padding: 4rem 10rem 2rem 4rem;
+}
+
+.footer-1{
+    margin-right: -8rem;
 }
 
 .footer-1 img{
-    width: 50%;
+    width: 47%;
 }
 
 .footerPartA h3{
@@ -76,13 +84,15 @@ hr{
 }
 
 .footer-A-text{
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 43px;
     color: rgb(37, 37, 36);
+    cursor: pointer;
 }
 
 .footer-A-text:hover{
-    color: rgb(49, 49, 179);
+    color: #1264B8;
 }
 
 /* footer part B */
@@ -90,7 +100,7 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 6rem 0rem 5rem;
+    padding: 2rem 6rem 0 5rem;
 }
 
 .footerPartB-1{
@@ -100,12 +110,62 @@ hr{
 
 .footerPartB-a{
     display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.footerPartB-a p{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.footerPartB-a p:hover{
+    color: #1264B8;
 }
 
 .footerPartB-b{
     display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+#footer-download{
+   color: #1264B8;
+   font-size: 15px;
+   font-weight: 600;
+   margin-top: 0;
+   display: flex;
+}
+#footer-download div{
+    line-height: 25px;
+}
+.download-icon{
+    font-size: 1.3rem;
+}
+
+.footer-icon{
+    font-size: 1.4rem;
+}
+
+.footerPartB-2{
+    font-size: 12px;
+}
+
+.footer-globe{
+    color: #b4a5a5;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.footer-change{
+    display: flex;
+}
+
+.footer-change div{
+    line-height: 25px;
 }
 
 /*END OF FAVOURS STYLING - FOOTER */
+
 
 /* MEDIA QUERY SECTION */
