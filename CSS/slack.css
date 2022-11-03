@@ -656,11 +656,40 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
     }
     .buttons-sec5{
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
+    }
+    .section5Buttons{
+        display: block;
+    }
+    .section-five-button1 {
+        width: 100%;
+    }
+    .section-five-button1 a{
+        padding: 20px 160px;
+    }
+    .section-five-button2 a{
+        padding: 20px 213px;
+        font-size: 16px;
     }
     .section-five-partB{
-        flex-direction: column;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 110px;
     }
+    .section-five-partB p{
+        text-align: left;
+    }
+    #section-five-text-2{
+        width: 180%;
+    }
+    #section-five-text-3{
+        width: 180%;
+    }
+    #section-five-text-4{
+        width: 180%;
+    }
+    
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
