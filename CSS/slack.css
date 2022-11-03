@@ -854,6 +854,9 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
         font-weight: 200;
         font-size: 15px;
     }
+    .section-five-partB p{
+        text-align: center;
+    }
     .footerPartA h3{
         font-size: 15px;
     }
