@@ -642,7 +642,9 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
-    
+    .footerPartB{
+        padding: 2rem 0rem 0 0.9rem;
+    }
     /* END OF FAVOUR- FOOTER */
 
 }
