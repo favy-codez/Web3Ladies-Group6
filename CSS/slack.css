@@ -315,6 +315,10 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
     width: 1.4rem;
 }
 
+.chart-sec{
+    display: flex;
+}
+
 .handshake{
     display: flex;
     gap: 5px;
@@ -348,6 +352,10 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
 
 .padlock img{
     width: 1.5rem;
+}
+
+.padlock-group{
+    display: flex;
 }
 
 .girl-laptop{
