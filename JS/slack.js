@@ -11,6 +11,57 @@ closeBtn.addEventListener("click", ()=>{
     collapse.classList.toggle("hide");
 })
 // BARAKAT
+//FAVOUR START
 
-
-
+function footer2() {
+    let x = document.getElementById("footer-2-text");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      document.getElementById("arrowF2").style.transform = "rotate(0deg)"
+    } else {
+      x.style.display = "block";
+      document.getElementById("arrowF2").style.transform = "rotate(90deg)"
+    }
+  }
+function footer3() {
+    let x = document.getElementById("footer-3-text");
+    
+    if (x.style.display === "block"){
+      x.style.display = "none";
+      document.getElementById("arrowF3").style.transform = "rotate(0deg)"
+    } else {
+      x.style.display = "block";
+      document.getElementById("arrowF3").style.transform = "rotate(90deg)"
+    }
+  }
+function footer4() {
+    let x = document.getElementById("footer-4-text");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      document.getElementById("arrowF4").style.transform = "rotate(0deg)"
+    } else {
+      x.style.display = "block";
+      document.getElementById("arrowF4").style.transform = "rotate(90deg)"
+    }
+  }
+function footer5() {
+    let x = document.getElementById("footer-5-text");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      document.getElementById("arrowF5").style.transform = "rotate(0deg)"
+    } else {
+      x.style.display = "block";
+      document.getElementById("arrowF5").style.transform = "rotate(90deg)"
+    }
+  }
+function footer6() {
+    let x = document.getElementById("footer-6-text");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      document.getElementById("arrowF6").style.transform = "rotate(0deg)"
+    } else {
+      x.style.display = "block";
+      document.getElementById("arrowF6").style.transform = "rotate(90deg)"
+    }
+  }
+//FAVOUR END
