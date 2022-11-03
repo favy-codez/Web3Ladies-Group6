@@ -763,29 +763,69 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
         padding: 0 4rem 0 4rem;
     }
     .section-five #section-five-text-1{
-        font-size: 12px;
-        padding: 0 7rem 0 4rem;
+        font-size: 1.125rem;
+        padding: 0 auto;
+    }
+    .section-five-partA h2{
+        font-size: 2rem;
+        margin-right: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .buttons-sec5{
+        align-items: unset;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin: 3px 15px;
+        justify-content: center;
     }
     .section-five-button1{
         width: 60%;
+        height: 57px;
+        
     }
     .section-five-button1 a{
+        display: inline-block;
         padding: 10px 20px;
-        font-size: 10px;
+        font-size: .875rem;
+        height: 57px;
+        width: 345px;
+        border: 0px solid white;
+        border-radius: 5px;
+        padding: 19px 40px 20px 40px;
+        letter-spacing: 1px;
     }
     .section-five-button2{
         width: 60%;
+        height: 57px;
     }
     .section-five-button2 a{
-        padding: 10px 20px;
-        font-size: 10px;
+        display: inline-block;
+        padding: 19px 20px;
+        font-size: .875rem;
+        height: 57px;
+        width: 345px;
+        letter-spacing: 1px;
     }
-    
+    .section-five-partB{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        width: 190px;
+    }
+    .section-five-partB-1{
+        text-align: center;
+    }
+    #section-five-text-2, #section-five-text-3, #section-five-text-4{
+        width: 190px;
+    }
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
     hr{
-        width: 43%;
+        width: 93%;
         display: block;
         margin-left: 2%;
         margin-right: 0%;
@@ -794,15 +834,17 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
     }
     .footerPartA{
         flex-direction: column;
-        width: 76%;
-        padding: 0 7rem 0 0.5rem;
+        width: 100%;
+        padding: 0 1rem 0 0.5rem;
     }
     .footer-icons{
-        gap: 1.5rem;
+        gap: 5rem;
+        font-size: 3rem;
     }
     .footerPartB-2{
-        width: 50%;
-        font-size: 8px;
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
     }
     .footerPartB-1{
         padding: 0 0 0 0.5rem;
@@ -810,9 +852,10 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
     .footerPartB{
         padding: 2rem 0 0 0.2rem;
         font-weight: 200;
+        font-size: 15px;
     }
     .footerPartA h3{
-        font-size: 10px;
+        font-size: 15px;
     }
     .footerPartA p{
         line-height: 30px;
