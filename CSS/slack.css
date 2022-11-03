@@ -651,7 +651,16 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
 
 @media screen and (max-width:576px){
     /* MEDIA QUERY FOR- SECTION FIVE */
-    
+    .section-five #section-five-text-1{
+        padding: 0 1rem;
+    }
+    .buttons-sec5{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .section-five-partB{
+        flex-direction: column;
+    }
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
