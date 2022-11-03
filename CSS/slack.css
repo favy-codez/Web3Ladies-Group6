@@ -689,11 +689,44 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
     #section-five-text-4{
         width: 180%;
     }
-    
+    .section-five-partB-1{
+        margin: 6rem 0 0 0;
+    }
+    .section-five-partB-2{
+        margin: 2rem 0 2rem 0;
+    }
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
-    
+    .footer-1-slack-icon img{
+        margin: 0 0 0 0rem;
+    }
+    .footerPartA{
+        padding: 4rem 2rem 2rem 2rem;
+    }
+    .footerPartB-a{
+        flex-direction: column;
+    }
+    .footerPartB-1{
+        display: block;
+    }
+    .footerPartB-b{
+        flex-direction: column;
+    }
+    .footer-icons{
+        display: flex;
+        gap: 7rem;
+    }
+    .footerPartB-a p{
+        font-size: 12px;
+    }
+    #footer-change div{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .footer-globe{
+        font-size: 1rem;
+    }
     /* END OF FAVOUR- FOOTER */
 
 }
