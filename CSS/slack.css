@@ -32,6 +32,7 @@ img{
     --black:#000;
     --gray:#f3f1f1;
 }
+
 header{
     background-color: var(--bg-color2);
     width: 100%;
@@ -112,7 +113,10 @@ padding: 3rem 2rem;
 display: flex;
 flex-direction: column;
 }
-/* hero */
+.hero-section{
+    background-color: var(--bg-color2);
+
+}
 .slackForIos{
     display: flex;
     flex-direction: column;
@@ -147,6 +151,10 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
 }
 
 @media only screen and (min-width:768px) {
+    nav,.slackForIos{
+        max-width: 1112px;
+        margin-inline: auto;
+    }
      .logo2{
         display: none;
     }
@@ -212,24 +220,14 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
             flex-direction: row;
         }
         .iosImg{
-            flex-basis: 50%;
+            border: 2px solid red;
         }
         .iosTitle{
-        margin-bottom: 0;
-        flex-basis: 40%;
-        }
-        .iosTitle h1{
-            width: 400px;
-            font-size: 3rem;
-        }
-        .iosTitle p{
-            width: 500px;
-            font-size: 1.5rem;
-        }
-        .iosTitle a{
-            width: 50%;
+            border: 2px solid yellow;
+        
         }
 }
+*/
 /*END OF BARAKATS'S STYLING  */
 
 /* NOT TAKEN SECTION - section-two */
