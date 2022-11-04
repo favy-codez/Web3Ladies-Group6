@@ -243,30 +243,227 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
 
 /* END OF BUKOLA'S STYLING */
 
+/* FAVOUR- SECTION FIVE */
+.section-five{
+    padding: 3rem 0;
+}
 
-/* NOT TAKEN SECTION - SECTION FIVE */
+.section-five-partA{
+    position: relative;
+}
+
+.section-five h2{
+    margin: 1.7rem 0 0 0;
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.section-five #section-five-text-1{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 2rem auto 1rem auto;
+}
+
+.emoji-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem 0 10rem;
+    text-align: center;
+}
+
+.building {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 5px;
+    box-shadow: 0px 0px 10px rgb(204, 196, 196);
+    padding: 10px ;
+    border-radius: 50px;
+}
+
+.building img{
+    width: 2rem;
+}
+.barChart{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0px 0px 10px rgb(204, 196, 196);
+    padding: 0px 4px;
+    border-radius: 17px;
+}
+.barChart img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.chart{
+    font-size: 1.6rem;
+    display: inline;
+    position: absolute;
+    left: 5%;
+    padding: 2px 8px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+}
+
+.chart img{
+    width: 1.4rem;
+}
+
+.handshake{
+    display: flex;
+    gap: 5px;
+}
+
+.shake{
+    font-size: 1.4rem;
+    display: inline;
+    position: absolute;
+    left: 79%;
+    top: 62%;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+    padding: 2px 4px;
+    border-radius: 17px;
+}
+
+.shake img{
+    width: 2rem;
+}
+
+.padlock{
+    font-size: 1.4rem;
+    display: inline;
+    position: absolute;
+    left: 18%;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+    padding: 2px 4px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+}
+
+.padlock img{
+    width: 1.5rem;
+}
+
+.girl-laptop{
+    font-size: 1.4rem;
+    display: inline;
+    position: absolute;
+    left: 86%;
+    display: flex;
+    padding: 2px 8px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+}
+
+.girl-laptop img{
+    width: 2rem;
+}
+
+.emoji-3{
+    display: block;
+    margin: 3.4rem auto 1rem auto;
+    width: 550px;
+}
+
+.section5Buttons{
+    display: inline-block;
+}
+
+.buttons-sec5{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-five-button1 a{
+    background-color: #4A154B;
+    color: #fff;
+    text-decoration: none;
+    border: 5px solid;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section-five-button1 a:hover{
+    background-color: #300b30;
+}
+
+.section-five-button2 a{
+    background-color: transparent;
+    color: #4A154B;
+    border: 1px solid #4A154B;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 33px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-five-button2 a:hover{
+    border: 1.4px solid #39123a;
+}
+
+.section-five-partB{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    margin: 7rem 0 0 0;
+}
+
+.section-five-partB p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.section-five-partB h1{
+    font-size: 4rem;
+    color: #4A154B;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+#section-five-text-2{
+    width: 60%;
+}
+
+#section-five-text-3{
+    width: 60%;
+}
+
+#section-five-text-4{
+    width: 80%;
+}
+/*END OF FAVOUR'S SECTION-FIVE */
 
 
-/*END OF NOT TAKEN SECTION */
+/* NOT TAKEN SECTION - SECTION SIX */
 
 
-/* NOT TAKEN SECTION- SECTION SIX */
+/*END OF NOT TAKEN-  SECTION SIX */
 
 
-/*END OF NOT TAKEN SECTION */
-
-
-/* BEGINNING OF JOY'S STYLING   */
+/* BEGINNING OF JOY'S STYLING - section seven  */
 
 
 
-/* END OF JOY'S STYLING  */
+/* END OF JOY'S STYLING - section seven */
 
 
-/* BEGINNING OF HAPPINESS'S STYLING */
+/* BEGINNING OF HAPPINESS'S STYLING - SECTION-EIGHT*/
 
 
-/* END OF HAPPINESS'S STYLING */
+
+/* END OF HAPPINESS'S STYLING-  */
 
 
 /* FAVOURS STYLING - FOOTER */
@@ -357,6 +554,7 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
 
 .footerPartB-2{
     font-size: 12px;
+    margin: 0 0 2rem 0;
 }
 
 .footer-globe{
@@ -377,4 +575,78 @@ font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial
 /*END OF FAVOURS STYLING - FOOTER */
 
 
-/* MEDIA QUERY SECTION */
+/*****************************************MEDIA QUERY SECTION ********************************************************/
+
+@media screen and (max-width:992px){
+    /* BEGINNING OF FAVOUR- SECTION FIVE */
+    .handshake , .girl-laptop, .barChart, .padlock, .emoji-1, .chart{
+        display: none;
+    }
+    .section-five h2{
+        font-size:2rem ;
+    }
+    .section-five-partB{
+        gap: 0.5rem;
+        padding: 0 8rem 0 8rem;
+    }
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    .footer-1{
+        display: none;
+    }
+    .footer-1-slack-icon img{
+        width: 7rem;
+        margin: 0 0 0 4rem;
+    }
+    .footerPartA{
+        padding: 4rem 4rem 2rem 6rem;
+    }
+    .footerPartB{
+        padding: 2rem 5rem 0 1rem;
+    }
+    .footerPartB-2{
+        padding: 0 0 2rem 3rem;
+    }
+    .footerPartB-a p{
+        font-size: 10px;
+    }
+    /* END OF FAVOUR- FOOTER */
+}
+
+@media screen and (max-width:768px){
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+@media screen and (max-width:576px){
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+@media screen and (max-width:375px){
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+
+
+
