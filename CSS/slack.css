@@ -17,7 +17,316 @@ hr{
 }
 
 /* BARAKATS'S STYLING  */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img,video{
+    display: block;
+    max-width: 100%;
+}
+:root{
+    --bg-color:#4a154b;
+    --purple:#611f69;
+    --bg-purple:#400d40;
+    --bg-color2:#f6efe8;
+    --highlight-color:#1264a3;
+    --google-blue:#4285f4;
+    --white:#fff;
+    --black:#000;
+    --gray:#f3f1f1;
+    --yellow-txt:#ecb22e;
+}
+header,.hero-section{
+    background-color: var(--bg-color);
+}
+header{
+    padding: 2rem 1rem 1rem; 
+}
+
+.slackForIos,.support-brand{
+    max-width: 1288px;
+    margin: auto;
+
+}
+
+/* header */
+nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav-control{
+    display: flex;
+    justify-content: space-between;
+}
+.search-icon1,.menu-icon{
+    color: var(--white);
+}
+.search-icon1{
+    margin-right: 1rem;
+}
+
+/* collapsible */
+.close-icon{
+    font-size: 1.5rem;
+}
+.collapsible{
+    background-color: var(--gray);
+    /* padding: 2rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 200ms ease;
+}
+.hide{
+transform:translateX(0);
+}
+
+.search-icon2{
+    display: none;
+}
+.collapse-control{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.workspace-btn{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+.tSales,.nWorkspace{
+    width: 100%;
+    text-align: center;
+    padding:  1rem;
+    font-weight: 500;
     
+}
+.tSales{
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    /* margin-right: 1rem; */
+    margin-bottom: 2rem;
+}
+.nWorkspace {
+    background-color: var(--purple);
+    color: var(--white);
+} 
+.menu-items{
+    padding: 1.5rem;
+}
+.menu-link a{
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+/* hero */
+
+.iosTitle{
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+.iosTitle h1{
+    font-size: 2.4em ;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+.iosTitle h1 .yellow-txt{
+    color: var(--yellow-txt);
+}
+.iosTitle p{
+    font-size: 1.1em;
+    margin: 2rem 0;
+    line-height: 25px;
+}
+.iosTitle .iosBtn1{
+    display: block;
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: 500;
+    background-color: var(--white);
+    color: var(--purple);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.google-logo{
+    width: 50px;
+    height: 43px;
+    border-radius: 7px;
+    margin-left: 0.3rem;
+    align-items: left;
+}
+.iosBtn2{
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    padding: 1.2rem;
+    flex-basis: 80%;
+    color: var(--white);
+}
+.google{
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    background-color: var(--google-blue);
+}
+.slack-note{
+    display: none;
+}
+.support-brand{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.brand{
+    width: 120px;
+}
+.fox{
+    width: 100px;
+}
+.target-logo{
+    width: 60px;
+}
+
+@media only screen and (min-width:768px){
+/* hero */
+.slackForIos{
+    display: flex;
+    justify-content: center;
+    /* max-width: 1288px; */
+    margin: auto;
+    flex-direction: row;
+}
+.iosTitle{
+margin-bottom: 0;
+padding: 2em 0 0;
+}
+.iosImg img{
+    width: 100%;
+}
+.iosTitle h1{
+    font-size: 2.5em;
+}
+
+.iosTitle p{
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+.iosTitle a{
+    /* margin-bottom: 0rem; */
+    width: 200px;
+}
+}
+/* header */
+@media only screen and (min-width:1071px) {
+    nav{
+        max-width:1288px;
+        margin-inline: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo2,.close-icon,.search-icon1,.menu-icon{
+        display: none;
+    }
+    .nav-control{
+        flex-basis: 15%;
+    }
+    .search-icon2{
+        display: initial;
+        margin-right: 2rem;
+        color: var(--white);
+    }
+    .hyperlinks{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-items{
+        display: flex;
+        align-items: center;
+    }
+    .menu-items .menu-link a{
+        color: var(--white);
+        margin: 0 1rem;
+    }
+    .collapsible{
+        background-color: transparent;
+        flex-basis: 85%;
+        padding: 0;
+        position: relative;
+        transform: translateY(0);
+        transition: 200ms ease;
+        
+    }
+    .collapse{
+        border: 2px solid green;
+    }
+    .collapse-control{
+        padding: 0;
+    }
+    .workspace-btn{
+        position: relative;
+        flex-direction: row;
+        padding: 0;
+        width: 40%;
+        background-color: transparent;
+    }
+    .tSales,.nWorkspace{
+        text-align: center;
+        padding:  0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .tSales {
+        color: var(--white);
+        border: 2px solid var(--white);
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    .nWorkspace {
+        background-color: var(--white);
+        color: var(--purple);
+        flex-direction: row;
+    } 
+    /* hero */
+    .iosTitle h1{
+        font-size: 3.5em;
+        color: white;
+    }
+    .sign{
+        display: none;
+    }
+    .signIn{
+        color: var(--white);
+    }
+    .slack-note{
+        display: initial;
+    }
+}
 /*END OF BARAKATS'S STYLING  */
 
 /* NOT TAKEN SECTION - section-two */
