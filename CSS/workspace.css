@@ -49,6 +49,10 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     font-size: 1rem;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid rgb(66,133,244);
+    color: rgb(66,133,244);
 }
 
 #apple-btn{
@@ -56,4 +60,5 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     font-size: 1rem;
+    border: 1px solid #000;
 }
