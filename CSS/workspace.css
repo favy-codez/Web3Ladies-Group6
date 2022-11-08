@@ -24,11 +24,33 @@
 
 #container-text{
     margin: 1rem 0;
+    font-size: 18px;
 }
 
 input[type=text] {
     width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
-  }
+    font-size: 1rem;
+}
+
+#continue-btn{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+#google-btn{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+#apple-btn{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+}
