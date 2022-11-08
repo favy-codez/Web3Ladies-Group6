@@ -7,16 +7,27 @@
 
 .container{
     max-width: 600px;
-    display: grid;
-    place-items: center;
+    display: block;
+    margin: 4rem auto;
+    text-align: center;
 }
 
 .container img{
-    width: 5rem;
+    width: 9rem;
+    margin: 0 0 2rem 0;
+}
+
+.container h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#container-text{
+    
 }
 
 input[type=text] {
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
