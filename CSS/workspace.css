@@ -65,3 +65,13 @@ input[type=text] {
     border: 2px solid #000;
     color: #000;
 }
+
+#already{
+    font-size: 15px;
+    margin: 1rem 0 1rem 0;
+    color: #946361;
+}
+
+#sign{
+    color: #CF9B69;
+}
