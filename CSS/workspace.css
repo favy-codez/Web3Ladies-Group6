@@ -77,7 +77,12 @@ input[type=text] {
     color: #6179B3;
 }
 
-#footer {
+.footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     color: #696969;
+    font-size: .9rem;
+    margin: ;
 }
