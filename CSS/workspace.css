@@ -23,8 +23,9 @@
 }
 
 #container-text{
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
     font-size: 18px;
+    color: #454245;
 }
 
 input[type=text] {
@@ -69,7 +70,7 @@ input[type=text] {
 #already{
     font-size: 15px;
     margin: 1rem 0 1rem 0;
-    color: #946361;
+    color: #616061;
 }
 
 #sign{
@@ -77,5 +78,6 @@ input[type=text] {
 }
 
 #footer {
-    color: #CF9B69;
+    display: flex;
+    color: #696969;
 }
