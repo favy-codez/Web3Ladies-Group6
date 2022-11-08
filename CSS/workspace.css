@@ -89,9 +89,17 @@ input[type=text] {
 
 /* horizontal part */
 .horizontal{
-    /* display: flex; */
+    display: flex;
+    margin: 1rem 0;
+    font-size: 15px;
+    padding: 0 1rem 0 3rem;
 }
 
 .line1{
-    width: 30%;
+    width: 43%;
+    margin-top: 10px;
+}
+
+.line2{
+    width: 43%;
 }
