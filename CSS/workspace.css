@@ -73,5 +73,9 @@ input[type=text] {
 }
 
 #sign{
+    color: #6179B3;
+}
+
+#footer {
     color: #CF9B69;
 }
