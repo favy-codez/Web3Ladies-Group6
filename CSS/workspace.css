@@ -8,7 +8,7 @@
 .container{
     max-width: 500px;
     display: block;
-    margin: 4rem auto;
+    margin: 3rem auto;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .container h1{
-    font-size: 3rem;
+    font-size: 2.9rem;
     font-weight: 600;
 }
 
@@ -95,11 +95,17 @@ input[type=text] {
     padding: 0 1rem 0 3rem;
 }
 
+.horizontal p{
+    padding: 0 1rem;
+}
+
 .line1{
-    width: 43%;
+    width: 40%;
     margin-top: 10px;
 }
 
 .line2{
-    width: 43%;
+    width: 40%;
+    margin-top: 10px;
 }
+
