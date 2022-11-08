@@ -86,3 +86,12 @@ input[type=text] {
     font-size: .9rem;
     margin: 2rem 0 0 0;
 }
+
+/* horizontal part */
+.horizontal{
+    /* display: flex; */
+}
+
+.line1{
+    width: 30%;
+}
