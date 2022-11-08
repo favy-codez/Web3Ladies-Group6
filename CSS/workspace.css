@@ -6,7 +6,7 @@
 }
 
 .container{
-    max-width: 600px;
+    max-width: 500px;
     display: block;
     margin: 4rem auto;
     text-align: center;
@@ -28,28 +28,31 @@
 }
 
 input[type=text] {
-    width: 70%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     font-size: 1rem;
 }
 
 #continue-btn{
-    width: 70%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     font-size: 1rem;
+    background-color: #703578;
+    color: #fff;
+    border: none;
 }
 
 #google-btn{
-    width: 70%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     font-size: 1rem;
 }
 
 #apple-btn{
-    width: 70%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     font-size: 1rem;
