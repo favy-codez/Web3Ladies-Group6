@@ -72,7 +72,7 @@ input[type=text]:focus{
 }
 
 #google-img{
-    width: 20px;
+    width: 17px;
 }
 
 #apple-btn{
@@ -148,5 +148,10 @@ input[type=text]:focus{
     }
     .container{
         max-width: 800px;
+    }
+    @media screen and (max-width:576px){
+        input[type=text] {
+            margin: 10px 0 10px 0;
+        }
     }
 }
