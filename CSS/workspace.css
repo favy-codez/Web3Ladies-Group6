@@ -50,7 +50,7 @@ input[type=text]:focus{
 }
 
 #continue-btn:hover{
-    background-color: #703578;
+    background-color: #522558;
 }
 
 #google-btn{
@@ -85,6 +85,9 @@ input[type=text]:focus{
     color: #6179B3;
 }
 
+#sign:hover{
+    text-decoration: underline;
+}
 .footer {
     display: flex;
     align-items: center;
