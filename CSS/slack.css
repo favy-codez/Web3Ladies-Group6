@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
 }
 
 /* styling for horizontal line */
-
+body{
+    overflow-x: hidden;
+}
 hr{
     display: block;
     margin-left: 5%;
@@ -25,215 +27,337 @@ html, body{
 a{
     text-decoration: none;
 }
-img{
+ul{
+    list-style-type: none;
+}
+img,video{
     display: block;
     max-width: 100%;
 }
 :root{
     --bg-color:#4a154b;
     --purple:#611f69;
+    --bg-purple:#400d40;
     --bg-color2:#f6efe8;
+    --highlight-color:#1264a3;
+    --google-blue:#4285f4;
     --white:#fff;
     --black:#000;
     --gray:#f3f1f1;
+    --yellow-txt:#ecb22e;
+}
+header,.hero-section{
+    background-color: var(--bg-color);
 }
 header{
-    background-color: var(--bg-color2);
-    width: 100%;
+    padding: 1rem 2rem ; 
+    height: 10vh;
+}
+
+/* header */
+nav{
+    display: flex;
+    flex-direction: column;
 }
 .nav-control{
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-     padding: 1.5rem ;
 }
- .search-icon1{
-    font-size: 20px;
+.search-icon1,.menu-icon{
+    color: var(--white);
+}
+.search-icon1{
     margin-right: 1rem;
 }
+
+/* collapsible */
+.close-icon{
+    font-size: 1.5rem;
+}
+.collapsible{
+    
+    background-color: var(--gray);
+    /* padding: 2rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 200ms ease;
+}
+.hide{
+transform:translateX(0);
+}
+
 .search-icon2{
     display: none;
 }
-.menu-icon{
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.collapsible{
-    /* padding: 2rem; */
-    background-color: var(--gray); 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translateX(-100%);
-    transition: 200ms ease;
-    z-index: 1;
-}
-.hide{
-    transform: translateX(0);
-}
- .menu-items{
-    padding: 2rem;
-    list-style-type: none;
-    width: 100%;
-    margin-bottom: 3rem;
-}
-.menu-link{
-    font-weight: 600;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-}
 .collapse-control{
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
+}
+.workspace-btn{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
     padding: 2rem;
 }
-.close-icon{
-    font-size: 20px;
-}
-.tSales,.nWorkspace{
+
+.tSales,.nWorkspace,.signIn{
     text-align: center;
     padding:  1rem;
-    font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
+    width: 100%;
 }
 .tSales{
-    font-weight: 500;
     color: var(--purple);
     border: 1px solid var(--purple);
-    margin-bottom: 1.5rem;
+    /* margin-right: 1rem; */
+    margin-bottom: 2rem;
 }
-.nWorkspace{
-    font-weight: 500;
+.nWorkspace {
     background-color: var(--purple);
     color: var(--white);
 } 
-.workspace-btn{
-background-color: var(--white);
-padding: 3rem 2rem;
-display: flex;
-flex-direction: column;
+.menu-items{
+    padding: 1.5rem;
 }
+.menu-link a{
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.signIn{display: none;}
 /* hero */
-.slackForIos{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: space-between;
-    background-color: var(--bg-color2);
+
+.iosTitle{
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-align: center;
     padding: 1rem;
 }
-.iosTitle{
-    margin-bottom: 3rem;
-}
 .iosTitle h1{
-font-size: 2.7rem;
-font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-size: 2.5rem ;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+}
+.iosTitle h1 .yellow-txt{
+    color: var(--yellow-txt);
 }
 .iosTitle p{
-    font-family: "roboto";
+    font-size: 1.1rem;
+    margin-bottom: 4rem ;
     line-height: 25px;
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    text-align: left;
 }
-.iosTitle a{
+.iosTitle .iosBtn1{
+    background-color: var(--white);
     display: block;
-    background-color: var(--purple);
-    color: var(--white);
+    padding: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.iosTitle .iosBtn{
+    display: block;
+    padding: 0.4rem;
+    background-color: var(--google-blue);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.iosBtn2{
+    flex-basis: 80%;
     text-align: center;
     font-size: 0.8rem;
     font-weight: 700;
-    padding: 1.5rem;
-    border-radius: 10px;
+    color: var(--white);
+    padding: 0 0.3rem;
+}
+.google-logo{
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    flex-basis: 10%;
+    /* margin-left: rem; */
+    /* align-items: left; */
+    cursor: pointer;
 }
 
-@media only screen and (min-width:768px) {
-     .logo2{
-        display: none;
-    }
+
+.slack-note{
+    display: none;
+}
+.support-brand{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.brand{
+    width: 120px;
+}
+.fox{
+    width: 100px;
+}
+.target-logo{
+    width: 60px;
+}
+@media only screen and (min-width:768px){
+/* hero */
+header{
+    height: 7vh;
+}
+.slackForIos{
+    padding: 1rem 0 6rem 0;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* max-width: 1288px; */
+    /* margin: auto; */
+}
+.iosTitle{
+margin-bottom: 0;
+text-align: left;
+/* padding: 2em 0 0; */
+}
+.iosImg img{
+    width: 100%;
+}
+.iosTitle h1{
+    font-size: 2.5em;
+}
+
+.iosTitle p{
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
+}
+/* header */
+@media only screen and (min-width:1071px) {
     
-    .close-icon{
+    nav{
+        /* max-width:1288px; */
+        margin-inline: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo2,.close-icon,.search-icon1,.menu-icon{
         display: none;
     }
-    .search-icon1{
-        display: none;
+    .nav-control{
+        flex-basis: 15%;
     }
     .search-icon2{
         display: initial;
-        margin-right: 1rem;
+        margin-right: 2rem;
+        color: var(--white);
     }
-    .menu-icon{display: none;}
-    nav{
-        padding: 1.5rem 2rem;
+    .hyperlinks{
         display: flex;
-        align-items: center;
         justify-content: space-between;
-    }
-    .collapsible{
-        position: relative;
-        transform: translateY(0);
-        transition: 200ms ease;
-        background-color: transparent;
-        padding: 0;
-        display: flex;
-        flex-basis: 90%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .nav-control{
-        padding: 0;
-        flex-basis: 10%;
     }
     .menu-items{
         display: flex;
-        flex-basis: 60%;
-        padding:0;  
-        margin-bottom: 0;
+        align-items: center;
     }
-    .menu-link{
-        margin-bottom: 0; 
-        margin-right: 1.2rem;  
+    .menu-items .menu-link a{
+        color: var(--white);
+        margin: 0 1rem;
+    }
+    .collapsible{
+        background-color: transparent;
+        flex-basis: 85%;
+        padding: 0;
+        position: relative;
+        transform: translateY(0);
+        transition: 200ms ease;
+        
+    }
+    .collapse{
+        border: 2px solid green;
+    }
+    .collapse-control{
+        padding: 0;
     }
     .workspace-btn{
-        background-color: transparent;
-        padding: 0;
+        position: relative;
         flex-direction: row;
-        }
-        .tSales,.nWorkspace{
-            padding: 0.5rem 1rem;
-            font-size: 0.5rem;
-            font-weight: 700;
-        }
-        .tSales{
-            margin-bottom: 0;
-            margin-right: 1rem;
-        }
-        /* hero */
-        .slackForIos{
-            flex-direction: row;
-        }
-        .iosImg{
-            flex-basis: 50%;
-        }
-        .iosTitle{
+        padding: 0;
+        width: 40%;
+        background-color: transparent;
+    }
+    .tSales,.nWorkspace{
+        text-align: center;
+        padding:  0.5rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    .tSales {
+        color: var(--white);
+        border: 2px solid var(--white);
+        margin-right: 1rem;
         margin-bottom: 0;
-        flex-basis: 40%;
-        }
-        .iosTitle h1{
-            width: 400px;
-            font-size: 3rem;
-        }
-        .iosTitle p{
-            width: 500px;
-            font-size: 1.5rem;
-        }
-        .iosTitle a{
-            width: 50%;
-        }
+    }
+    .nWorkspace {
+        background-color: var(--white);
+        color: var(--purple);
+        flex-direction: row;
+    } 
+    /* hero */
+    .iosTitle h1{
+        font-size: 3rem;
+        line-height: 50px;
+        color: white;
+    }
+    .iosTitle .iosBtn1{
+        margin-bottom: 0;
+        margin-right: 1rem;
+        padding: 0.92rem;
+    }
+    .sign-btns{
+        display: flex;
+        align-items: center;
+    }
+    .google-logo{
+        width: 35px;
+        height: 30px;
+        margin-right: 1rem;
+    }
+    .iosTitle .iosBtn{
+        padding: 0.4rem;
+    }
+    .iosTitle .iosBtn2{
+        font-size: 0.7rem;
+    }
+    .sign{
+        display: none;
+    }
+    .signIn{
+        display: initial;
+        color: var(--white);
+    }
+    .slack-note{
+        display: initial;
+    }
+   
+    
 }
 /*END OF BARAKATS'S STYLING  */
 
