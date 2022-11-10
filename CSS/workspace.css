@@ -55,7 +55,6 @@ input[type=text]:focus{
 
 #google-btn{
     width: 80%;
-    /* padding: 12px 20px; */
     margin: 8px 0;
     font-size: 1.1rem;
     font-weight: 600;
@@ -66,13 +65,15 @@ input[type=text]:focus{
 
 .google-part{
     display: flex;
+    gap: 5px;
     align-items: center;
     justify-content: center;
 }
 
 #google-img{
     width: 20px;
-    
+    padding: 25px 0 0 0;
+
 }
 
 #apple-btn{
