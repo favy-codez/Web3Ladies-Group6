@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/slack.css">
     <!-- font awesome -->
@@ -40,24 +42,7 @@
     </div>
     <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
   </div>
-  <div class="hyperlinks">
-    <ul class="menu-items">
-      <li class="menu-link"><a href="#">Product  </a></li>
-      <li class="menu-link"><a href="#">Solutions</a></li>
-      <li class="menu-link"><a href="#">Enterprise</a></li>
-      <li class="menu-link"><a href="#">Resources</a></li>
-      <li class="menu-link"><a href="#">Pricing  </a></li>
-      <li class="menu-link sign"><a href="#">Sign in  </a></li>
-    </ul>
-    <div class="workspace-btn">
-      <span class="search-icon2">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </span>
-        <a class="signIn" href="#">Sign in</a>
-        <a class="tSales" href="#"> TALK TO SALES</a>
-        <a class="nWorkspace" href="#">TRY FOR FREE</a>
-    </div>
-  </div>
+
   </div>
     </nav>
     </header>
@@ -118,8 +103,15 @@
             </div>
               <h2>Teams large and small rely on Slack</h2>
               <div class="emoji-2">
-                <div class="chart"><img src="./IMAGES/chart-with-upwards-trend_1f4c8.png" alt=""> 5</div>
-                <p id="section-five-text-1">Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+                <div class="chart">
+                  <div class="chart-sec">
+                    <img src="./IMAGES/chart-with-upwards-trend_1f4c8.png" alt="">
+                  <div class="chart-text">5</div>
+                  </div>
+                </div>
+                <p id="section-five-text-1">
+                  Slack securely scales up to support collaboration at the world’s biggest companies.
+                </p>
                 <div class="shake">
                   <div class="handshake">
                   <img src="./IMAGES/handshake_1f91d.png" alt=""> 
@@ -128,7 +120,12 @@
               </div>
               </div>
               <div class="emoji-3">
-                <div class="padlock"><img src="./IMAGES/locked_1f512.png" alt=""> 27</div>
+                <div class="padlock">
+                  <div class="padlock-group">
+                  <img src="./IMAGES/locked_1f512.png" alt="">
+                  <div class="padlock-text">27</div>
+                  </div>
+                </div>
                 <div class="section5Buttons">
                   <div class="buttons-sec5">
                     <div class="section-five-button1">
@@ -160,12 +157,12 @@
             </div>
           </div>
 
-          <!-- BEGINNING OF NOT TAKEN SECTION SIX -->
+          <!-- BEGINNING OF ONIZE ALIYU'S PART -->
           <!-- We were able to create a large virtual network of -->
           <section class="section-six">
             
           </section>
-          <!-- END OF NOT TAKEN SECTION SIX -->
+          <!-- END OF ONIZE ALIYU'S PART - SECTION SIX -->
 
         <!--BEGINNING OF JOY'S SECTION -->
         <!-- Take a deeper dive into a new way to work - SECTION SEVEN -->
@@ -194,42 +191,57 @@
             </div>
             <div class="footer-2">
               <h3>WHY SLACK?</h3>
-              <p class="footer-A-text">Slack vs Emails</p>
-              <p class="footer-A-text">Channels</p>
-              <p class="footer-A-text">Engagement</p>
-              <p class="footer-A-text">Scale</p>
-              <p class="footer-A-text">Watch the Demo</p>
+              <span  onclick="footer2()"><i class="ri-arrow-right-s-line" id="arrowF2"></i></span>
+              <div id="footer-2-text">
+                <p class="footer-A-text">Slack vs Emails</p>
+                <p class="footer-A-text">Channels</p>
+                <p class="footer-A-text">Engagement</p>
+                <p class="footer-A-text">Scale</p>
+                <p class="footer-A-text">Watch the Demo</p>
+              </div>
             </div>
             <div class="footer-3">
               <h3>PRODUCT</h3>
-              <p class="footer-A-text">Features</p>
-              <p class="footer-A-text">Integrations</p>
-              <p class="footer-A-text">Enterprise</p>
-              <p class="footer-A-text">Solutions</p>
+              <span onclick="footer3()"><i class="ri-arrow-right-s-line" id="arrowF3"></i></span>
+              <div id="footer-3-text">
+                <p class="footer-A-text">Features</p>
+                <p class="footer-A-text">Integrations</p>
+                <p class="footer-A-text">Enterprise</p>
+                <p class="footer-A-text">Solutions</p>
+              </div>
             </div>
             <div class="footer-4">
               <h3>PRICING</h3>
-              <p class="footer-A-text">Plans</p>
-              <p class="footer-A-text">Paid vs. Free</p>
+              <span  onclick="footer4()"><i class="ri-arrow-right-s-line" id="arrowF4"></i></span>
+              <div id="footer-4-text">
+                <p class="footer-A-text">Plans</p>
+                <p class="footer-A-text">Paid vs. Free</p>
+              </div>
             </div>
             <div class="footer-5">
               <h3>RESOURCES</h3>
-              <p class="footer-A-text">Partners</p>
-              <p class="footer-A-text">Developers</p>
-              <p class="footer-A-text">Community</p>
-              <p class="footer-A-text">Apps</p>
-              <p class="footer-A-text">Blog</p>
-              <p class="footer-A-text">Help Center</p>
-              <p class="footer-A-text">Events</p>
+              <span onclick="footer5()"><i class="ri-arrow-right-s-line" id="arrowF5"></i></span>
+              <div id="footer-5-text">
+                <p class="footer-A-text">Partners</p>
+                <p class="footer-A-text">Developers</p>
+                <p class="footer-A-text">Community</p>
+                <p class="footer-A-text">Apps</p>
+                <p class="footer-A-text">Blog</p>
+                <p class="footer-A-text">Help Center</p>
+                <p class="footer-A-text">Events</p>
+              </div>
             </div>
             <div class="footer-6">
               <h3>COMPANY</h3>
-              <P class="footer-A-text">About Us</P>
-              <P class="footer-A-text">Leadership</P>
-              <P class="footer-A-text">Investor Relations</P>
-              <P class="footer-A-text">News</P>
-              <p class="footer-A-text">Media Kit</p>
-              <p class="footer-A-text">Careers</p>
+              <span onclick="footer6()"><i class="ri-arrow-right-s-line" id="arrowF6"></i></span>
+              <div id="footer-6-text">
+                <P class="footer-A-text">About Us</P>
+                <P class="footer-A-text">Leadership</P>
+                <P class="footer-A-text">Investor Relations</P>
+                <P class="footer-A-text">News</P>
+                <p class="footer-A-text">Media Kit</p>
+                <p class="footer-A-text">Careers</p>
+              </div>
             </div>
           </div>
 
@@ -247,10 +259,12 @@
               </div>
               <div class="footerPartB-b">
                 <div id="footer-download"><i class="ri-download-cloud-line download-icon"></i><div> Download Slack</div></div>
-              <i class="ri-twitter-fill footer-icon"></i>
-              <i class="ri-facebook-box-fill footer-icon"></i>
-              <i class="ri-youtube-fill footer-icon"></i>
-              <i class="ri-linkedin-box-fill footer-icon"></i>
+                <div class="footer-icons">
+                  <i class="ri-twitter-fill footer-icon"></i>
+                  <i class="ri-facebook-box-fill footer-icon"></i>
+                  <i class="ri-youtube-fill footer-icon"></i>
+                  <i class="ri-linkedin-box-fill footer-icon"></i>
+                </div>
               </div>
             </div>
             <div class="footerPartB-2">
