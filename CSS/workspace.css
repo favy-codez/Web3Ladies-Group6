@@ -35,6 +35,10 @@ input[type=text] {
     font-size: 1rem;
 }
 
+input[type=text]:focus{
+    border: 5px solid rgb(66,133,244);
+}
+
 #continue-btn{
     width: 80%;
     padding: 12px 20px;
@@ -43,6 +47,10 @@ input[type=text] {
     background-color: #703578;
     color: #fff;
     border: none;
+}
+
+#continue-btn:hover{
+    background-color: #703578;
 }
 
 #google-btn{
