@@ -119,7 +119,6 @@ transform:translateX(0);
 .tSales{
     color: var(--purple);
     border: 1px solid var(--purple);
-    /* margin-right: 1rem; */
     margin-bottom: 2rem;
 }
 .nWorkspace {
@@ -139,7 +138,6 @@ transform:translateX(0);
 }
 .signIn{display: none;}
 /* hero */
-
 .iosTitle{
     margin-bottom: 2rem;
     color: var(--white);
@@ -190,12 +188,8 @@ transform:translateX(0);
     height: 40px;
     border-radius: 5px;
     flex-basis: 10%;
-    /* margin-left: rem; */
-    /* align-items: left; */
     cursor: pointer;
 }
-
-
 .slack-note{
     display: none;
 }
@@ -232,7 +226,6 @@ header{
 .iosTitle{
 margin-bottom: 0;
 text-align: left;
-/* padding: 2em 0 0; */
 }
 .iosImg img{
     width: 100%;
@@ -240,7 +233,6 @@ text-align: left;
 .iosTitle h1{
     font-size: 2.5em;
 }
-
 .iosTitle p{
     margin: 1.5rem 0;
     font-size: 1rem;
@@ -251,7 +243,6 @@ text-align: left;
 @media only screen and (min-width:1071px) {
     
     nav{
-        /* max-width:1288px; */
         margin-inline: auto;
         flex-direction: row;
         flex-wrap: wrap;
