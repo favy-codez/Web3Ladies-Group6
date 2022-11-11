@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    /* font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif; */
 }
 
 /* styling for horizontal line */
 body{
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 hr{
     display: block;
@@ -32,7 +33,7 @@ ul{
 }
 img,video{
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 :root{
     --bg-color:#4a154b;
@@ -48,6 +49,9 @@ img,video{
 }
 header,.hero-section{
     background-color: var(--bg-color);
+}
+.hero-section{
+    padding-bottom: 3rem;
 }
 header{
     padding: 1rem 2rem ; 
@@ -119,7 +123,6 @@ transform:translateX(0);
 .tSales{
     color: var(--purple);
     border: 1px solid var(--purple);
-    /* margin-right: 1rem; */
     margin-bottom: 2rem;
 }
 .nWorkspace {
@@ -139,7 +142,6 @@ transform:translateX(0);
 }
 .signIn{display: none;}
 /* hero */
-
 .iosTitle{
     margin-bottom: 2rem;
     color: var(--white);
@@ -190,12 +192,8 @@ transform:translateX(0);
     height: 40px;
     border-radius: 5px;
     flex-basis: 10%;
-    /* margin-left: rem; */
-    /* align-items: left; */
     cursor: pointer;
 }
-
-
 .slack-note{
     display: none;
 }
@@ -219,39 +217,42 @@ transform:translateX(0);
 @media only screen and (min-width:768px){
 /* hero */
 header{
-    height: 7vh;
+    height: 6vh;
 }
 .slackForIos{
-    padding: 1rem 0 6rem 0;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* max-width: 1288px; */
-    /* margin: auto; */
+    padding: 1rem 0 3rem 0;
+    display: grid;
+    grid-template-columns: 55% 76%;
+    gap: 2%;  
+}
+.iosImg video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 .iosTitle{
 margin-bottom: 0;
 text-align: left;
-/* padding: 2em 0 0; */
-}
-.iosImg img{
-    width: 100%;
-}
-.iosTitle h1{
-    font-size: 2.5em;
+padding: 2rem;
 }
 
+.iosTitle h1{
+    font-size: 3rem;
+    line-height: 53px;
+}
 .iosTitle p{
-    margin: 1.5rem 0;
+    margin-bottom: 2.5rem;
     font-size: 1rem;
 }
-
+.iosTitle .iosBtn1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
 }
 /* header */
 @media only screen and (min-width:1071px) {
     
     nav{
-        /* max-width:1288px; */
         margin-inline: auto;
         flex-direction: row;
         flex-wrap: wrap;
@@ -306,7 +307,7 @@ text-align: left;
     .tSales,.nWorkspace{
         text-align: center;
         padding:  0.5rem;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         font-weight: 500;
     }
     .tSales {
@@ -321,30 +322,49 @@ text-align: left;
         flex-direction: row;
     } 
     /* hero */
+    .slackForIos{
+        padding-top: 4rem;
+    grid-template-columns: 55% 50%;
+
+    }
+    .iosTitle{
+        padding: 2rem;
+    }
     .iosTitle h1{
-        font-size: 3rem;
-        line-height: 50px;
+        width: 700px;
+        font-size: 4rem;
+        line-height: 65px;
         color: white;
+    }
+    .iosTitle p{
+        font-size: 1.4rem;
+        margin-top: 1rem;
     }
     .iosTitle .iosBtn1{
         margin-bottom: 0;
         margin-right: 1rem;
         padding: 0.92rem;
     }
+    
     .sign-btns{
         display: flex;
         align-items: center;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
     }
     .google-logo{
-        width: 35px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         margin-right: 1rem;
     }
+    .iosTitle .iosBtn1{
+        padding: 1.5rem 4rem;
+    }
     .iosTitle .iosBtn{
-        padding: 0.4rem;
+        padding: 0.4rem 3rem 0.4rem 0.3rem;
     }
     .iosTitle .iosBtn2{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .sign{
         display: none;
@@ -586,9 +606,99 @@ text-align: left;
 
 
 /* BEGINNING OF JOY'S STYLING - section seven  */
+.section-seven{
+    background-color: var(--bg-color2);
+    padding-bottom: 5rem;
+}
+.section-seven h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 3rem;
+}
 
+.ccard{
+    width: 268px;
+    height: auto;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+.ccard:hover{
+    transition:1s ease-in-out;
+    width: 280px;
+    height: 520px;
+}
+.c-one{
+    background-color: var(--bg-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ccard .c-one .collection-img img{
+    margin: 3rem 0 1rem 0;
+}
+.card-txt{
+    padding: 1.3rem 1rem;
+}
+.card-txt .card-name{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.card-txt h3{
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+}
+.card-footer{
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.card-footer span{
+    float:right;
+}
+.c-two,.c-three,.c-four{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c-two .collection-img,.c-three .collection-img, .c-four .collection-img{
+    margin: 0;
+    flex-basis: 50%;
+    padding: 0.5rem;
+}
+.c-two .collection-img img,.c-three .collection-img img, .c-four .collection-img img{
+    width: 100%;
+    height: 100%;
+}
+.c-two .card-txt, .c-three .card-txt, .c-four .card-txt{
+    flex-basis: 40%;
+}
+.c-two .card-footer, .c-three .card-footer, .c-four .card-footer{
+color: var(--highlight-color);
+}
 
-
+@media only screen and (min-width:768px) {
+    .ccard{
+        width: 258px;
+    }
+    .card-collections{
+        margin-inline:auto;
+        max-width: 60%;
+        gap: 3%;
+        justify-content: center;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (min-width:1071px){
+    .card-collections{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 /* END OF JOY'S STYLING - section seven */
 
 
