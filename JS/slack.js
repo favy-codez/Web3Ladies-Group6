@@ -23,19 +23,7 @@ pagination.forEach((item,index)=>{
     console.log("display");
   })
 })
-// function slider(e) {
-//   const sliderCard = document.querySelectorAll(".ccard");
-//   const sliderContainer = document.querySelector(".card-collections");
 
-//   sliderContainer.addEventListener("click",()=>{
-//     sliderCard.forEach(item =>{
-//       item.style.display = "block"
-//     })
-//   })
-//   console.log(sliderContainer);
-//   console.log(sliderCard);
-// }
-// slider()
 
 // BARAKAT 
 
