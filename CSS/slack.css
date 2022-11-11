@@ -726,7 +726,7 @@ color: var(--highlight-color);
     .card-collections{
         grid-auto-flow:row;
         margin-inline:auto;
-        max-width: 80%;
+        max-width: 60%;
         grid-template-columns: repeat(2, 1fr);
        
     }
@@ -736,6 +736,7 @@ color: var(--highlight-color);
         width: 90%;
     }
     .card-collections{
+        max-width: 80%;
         grid-template-columns: repeat(4,1fr);
     }
     .pagination div{
