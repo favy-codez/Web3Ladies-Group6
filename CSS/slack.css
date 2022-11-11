@@ -605,8 +605,36 @@ padding: 2rem;
 
 
 /* BEGINNING OF JOY'S STYLING - section seven  */
-
-
+.section-seven{
+    background-color: var(--bg-color2);
+}
+.ccard{
+    width: 346px;
+    height: auto;
+    /* padding: 1.5rem 1rem; */
+    /* height: 346px;    */
+}
+.c-one{
+    background-color: var(--bg-color);
+    color: var(--white);
+}
+.card-txt{
+    padding: 1.3rem 1rem;
+}
+.card-txt h3{
+    font-size: 1.7rem;
+    margin: 0.6rem 0;
+}
+.collection-img{
+    object-fit: cover;
+    margin: 3rem 0 2rem 0;
+}
+.card-footer{
+    padding: 1.5rem 1rem;
+}
+.card-footer span{
+    float:right;
+}
 
 /* END OF JOY'S STYLING - section seven */
 
