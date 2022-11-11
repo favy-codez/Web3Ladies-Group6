@@ -79,7 +79,6 @@ nav{
     font-size: 1.5rem;
 }
 .collapsible{
-    
     background-color: var(--gray);
     /* padding: 2rem; */
     position: absolute;
@@ -625,9 +624,7 @@ padding: 2rem;
     cursor: pointer;
 }
 .ccard:hover{
-    transition:1s ease-in-out;
-    width: 280px;
-    height: 520px;
+    transform: scale(1.1)
 }
 .c-one{
     background-color: var(--bg-color);
