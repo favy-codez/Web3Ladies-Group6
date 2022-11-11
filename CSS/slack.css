@@ -32,7 +32,7 @@ ul{
 }
 img,video{
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 :root{
     --bg-color:#4a154b;
@@ -48,6 +48,9 @@ img,video{
 }
 header,.hero-section{
     background-color: var(--bg-color);
+}
+.hero-section{
+    padding-bottom: 3rem;
 }
 header{
     padding: 1rem 2rem ; 
@@ -213,31 +216,37 @@ transform:translateX(0);
 @media only screen and (min-width:768px){
 /* hero */
 header{
-    height: 7vh;
+    height: 6vh;
 }
 .slackForIos{
-    padding: 1rem 0 6rem 0;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* max-width: 1288px; */
-    /* margin: auto; */
+    padding: 1rem 0 3rem 0;
+    display: grid;
+    grid-template-columns: 55% 76%;
+    gap: 2%;  
+}
+.iosImg video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 .iosTitle{
 margin-bottom: 0;
 text-align: left;
-}
-.iosImg img{
-    width: 100%;
-}
-.iosTitle h1{
-    font-size: 2.5em;
-}
-.iosTitle p{
-    margin: 1.5rem 0;
-    font-size: 1rem;
+padding: 2rem;
 }
 
+.iosTitle h1{
+    font-size: 3rem;
+    line-height: 53px;
+}
+.iosTitle p{
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+.iosTitle .iosBtn1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
 }
 /* header */
 @media only screen and (min-width:1071px) {
@@ -297,7 +306,7 @@ text-align: left;
     .tSales,.nWorkspace{
         text-align: center;
         padding:  0.5rem;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         font-weight: 500;
     }
     .tSales {
@@ -312,30 +321,49 @@ text-align: left;
         flex-direction: row;
     } 
     /* hero */
+    .slackForIos{
+        padding-top: 4rem;
+    grid-template-columns: 55% 50%;
+
+    }
+    .iosTitle{
+        padding: 2rem;
+    }
     .iosTitle h1{
-        font-size: 3rem;
-        line-height: 50px;
+        width: 700px;
+        font-size: 4rem;
+        line-height: 65px;
         color: white;
+    }
+    .iosTitle p{
+        font-size: 1.4rem;
+        margin-top: 1rem;
     }
     .iosTitle .iosBtn1{
         margin-bottom: 0;
         margin-right: 1rem;
         padding: 0.92rem;
     }
+    
     .sign-btns{
         display: flex;
         align-items: center;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
     }
     .google-logo{
-        width: 35px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         margin-right: 1rem;
     }
+    .iosTitle .iosBtn1{
+        padding: 1.5rem 4rem;
+    }
     .iosTitle .iosBtn{
-        padding: 0.4rem;
+        padding: 0.4rem 3rem 0.4rem 0.3rem;
     }
     .iosTitle .iosBtn2{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .sign{
         display: none;
