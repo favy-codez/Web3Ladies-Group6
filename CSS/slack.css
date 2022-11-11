@@ -624,27 +624,26 @@ padding: 2rem;
 }
 .card-collections{
     display: grid;
-    grid-template-rows: repeat(4,auto);
-    /* grid-auto-flow: column; */
-    overflow-x: auto;
+    grid-template-columns: repeat(4,100%);
+    grid-auto-flow: column;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory; 
 }
 .ccard{
     scroll-snap-align: center;
     position: relative;
-    /* width: 268px; */
-    width: 90%;
-    /* height: auto; */
+    width: 268px;
     margin-inline: auto;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
     cursor: pointer;
 }
-/* .ccard:hover{ */
-    /* transition:1s ease-in-out; */
-    /* width: 280px;
-    height: 520px; */
-/* } */
+.ccard:hover{ 
+    transition: transform 1s ease-in-out; 
+    transform: scale(1.1,1.1);
+
+}
 .c-one{
     background-color: var(--bg-color);
     color: var(--white);
@@ -720,20 +719,27 @@ color: var(--highlight-color);
 @media only screen and (min-width:768px) {
     .ccard{
         width: 258px;
+    } 
+    .pagination div{
+        display: none;
     }
     .card-collections{
+        grid-auto-flow:row;
         margin-inline:auto;
-        max-width: 60%;
-        gap: 3%;
-        /* justify-content: center;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2,1fr); */
+        max-width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+       
     }
 }
 @media only screen and (min-width:1071px){
+    .ccard{
+        width: 90%;
+    }
     .card-collections{
         grid-template-columns: repeat(4,1fr);
+    }
+    .pagination div{
+        display: none;
     }
 }
 /* END OF JOY'S STYLING - section seven */

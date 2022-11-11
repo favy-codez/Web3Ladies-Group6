@@ -15,11 +15,14 @@ closeBtn.addEventListener("click", ()=>{
 // SECTION SEVEN
 const pagination = document.querySelectorAll(".control");
 const slideCard = document.querySelectorAll(".ccard")
+  const sliderContainer = document.querySelector(".card-collections");
 console.log(slideCard);
 console.log(pagination);
 pagination.forEach((item,index)=>{
   item.addEventListener("click",()=>{
-    slideCard[index].scrollIntoView()
+    setTimeout(function(){
+      window.scrollBy(0,-1)
+    },1000)
     console.log("display");
   })
 })
