@@ -1,4 +1,5 @@
 // BARAKAT
+// HEADER
 const menuIcon = document.querySelector(".menu-icon");
 const menuItems = document.querySelector(".menu-items");
 const collapse = document.querySelector(".collapsible");
@@ -10,7 +11,34 @@ menuIcon.addEventListener("click", ()=>{
 closeBtn.addEventListener("click", ()=>{
     collapse.classList.toggle("hide");
 })
-// BARAKAT
+
+// SECTION SEVEN
+const pagination = document.querySelectorAll(".control");
+const slideCard = document.querySelectorAll(".ccard")
+console.log(slideCard);
+console.log(pagination);
+pagination.forEach((item,index)=>{
+  item.addEventListener("click",()=>{
+    slideCard[index].scrollIntoView()
+    console.log("display");
+  })
+})
+// function slider(e) {
+//   const sliderCard = document.querySelectorAll(".ccard");
+//   const sliderContainer = document.querySelector(".card-collections");
+
+//   sliderContainer.addEventListener("click",()=>{
+//     sliderCard.forEach(item =>{
+//       item.style.display = "block"
+//     })
+//   })
+//   console.log(sliderContainer);
+//   console.log(sliderCard);
+// }
+// slider()
+
+// BARAKAT 
+
 //FAVOUR START
 
 function footer2() {

@@ -8,7 +8,7 @@
 
 /* styling for horizontal line */
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: 'Roboto', sans-serif;
 }
 hr{
@@ -44,7 +44,7 @@ img,video{
     --google-blue:#4285f4;
     --white:#fff;
     --black:#000;
-    --gray:#f3f1f1;
+    --gray:#9e9c9c;
     --yellow-txt:#ecb22e;
 }
 header,.hero-section{
@@ -125,6 +125,9 @@ transform:translateX(0);
     border: 1px solid var(--purple);
     margin-bottom: 2rem;
 }
+.tSales:hover{
+    border: 2px solid var(--white);
+}
 .nWorkspace {
     background-color: var(--purple);
     color: var(--white);
@@ -139,6 +142,9 @@ transform:translateX(0);
     color: var(--black);
     font-weight: 500;
     margin-bottom: 1.5rem;
+}
+.menu-link:hover {
+    text-decoration: underline;
 }
 .signIn{display: none;}
 /* hero */
@@ -616,19 +622,29 @@ padding: 2rem;
     font-weight: 700;
     padding: 3rem;
 }
-
+.card-collections{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    /* grid-auto-flow: column; */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; 
+}
 .ccard{
-    width: 268px;
-    height: auto;
+    scroll-snap-align: center;
+    position: relative;
+    /* width: 268px; */
+    width: 90%;
+    /* height: auto; */
     margin-inline: auto;
     margin-bottom: 1.5rem;
     cursor: pointer;
 }
-.ccard:hover{
-    transition:1s ease-in-out;
-    width: 280px;
-    height: 520px;
-}
+/* .ccard:hover{ */
+    /* transition:1s ease-in-out; */
+    /* width: 280px;
+    height: 520px; */
+/* } */
 .c-one{
     background-color: var(--bg-color);
     color: var(--white);
@@ -679,7 +695,28 @@ padding: 2rem;
 .c-two .card-footer, .c-three .card-footer, .c-four .card-footer{
 color: var(--highlight-color);
 }
-
+.section-seven .pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-seven .pagination div {
+    position: relative;
+    background-color: var(--gray) ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+.section-seven .pagination div a{
+    position: absolute;
+    inset: 0;
+    background-color: black;
+}
+.section-seven .pagination div:hover{
+    background-color: var(--purple);
+}
 @media only screen and (min-width:768px) {
     .ccard{
         width: 258px;
@@ -688,10 +725,10 @@ color: var(--highlight-color);
         margin-inline:auto;
         max-width: 60%;
         gap: 3%;
-        justify-content: center;
+        /* justify-content: center;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr); */
     }
 }
 @media only screen and (min-width:1071px){
