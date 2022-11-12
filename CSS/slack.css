@@ -1009,6 +1009,11 @@ color: var(--highlight-color);
 }
 
 @media screen and (max-width:576px){
+    /* media query for section-eight (favour) */
+    .section-eight h2{
+        font-size: 2rem;
+    }
+    /* END of media query for section-eight (favour) */
     /* MEDIA QUERY FOR- SECTION FIVE */
     .section-five #section-five-text-1{
         padding: 0 1rem;
@@ -1106,6 +1111,20 @@ color: var(--highlight-color);
 }
 
 @media screen and (max-width:375px){
+    /* media query for section-eight (favour) */
+    .section-eight h2{
+        font-size: 2rem;
+    }
+    .Sales-btn{
+        width: 90%;
+    }
+    .Workspace-btn{
+        width: 90%;
+    }
+    .section-eight{
+        clip-path: ellipse(105% 100% at center top);
+    }
+    /* END of media query for section-eight (favour) */
     /* MEDIA QUERY FOR- SECTION FIVE */
     .section-five h2{
         font-size: 1.1rem;
