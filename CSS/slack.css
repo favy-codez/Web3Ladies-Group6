@@ -391,7 +391,7 @@ padding: 2rem;
 
 /* FAVOUR- SECTION FIVE */
 .section-five{
-    padding: 3rem 0 6rem 0;
+    padding: 3rem 0 4rem 0;
 }
 
 .section-five-partA{
@@ -1244,6 +1244,10 @@ color: var(--highlight-color);
         display: flex;
         gap: 7rem;
     }
+    .footerPartB-a{
+        gap: 2rem;
+        padding: 0 0 5px 0;
+    }
     .footerPartB-a p{
         font-size: 12px;
     }
@@ -1367,8 +1371,8 @@ color: var(--highlight-color);
     .footerPartA{
         flex-direction: column;
         width: 100%;
-        padding: 0 1rem 0 0.5rem;
-
+        padding: 1.4rem 1rem 10px 0.5rem;
+        gap: 10px;
     }
     .footer-icons{
         gap: 5rem;
