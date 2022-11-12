@@ -31,6 +31,7 @@ a{
 ul{
     list-style-type: none;
 }
+
 img,video{
     display: block;
     width: 100%;
@@ -624,7 +625,7 @@ padding: 2rem;
     cursor: pointer;
 }
 .ccard:hover{
-    transform: scale(1.1)
+    
 }
 .c-one{
     background-color: var(--bg-color);
