@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/slack.css">
+    <!-- pagination-lib -->
+    <link rel="stylesheet" href="lib/swipper.min.css"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Slack.com</title>
+</head>
+<body>
+
+
+  <!--BEGINNING OF BARAKATS'S SECTION -->
+
+  <!--BEGINNING OF BARAKATS'S SECTION - HEADER AND NAV-->
+
+  <header>
+    <nav>
+  <div class="nav-control">
+    <div class="logo">
+      <svg width="100" class="c-slacklogo--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Slack</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z" fill="#fff"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#097eff"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#097eff"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ecb12f"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#ecb12f"></path></g></svg>
+    </div>
+    <div class="nav-icon">
+      <span class="search-icon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <span class="menu-icon"><i class="fa-solid fa-bars"></i></span> 
+  </div>
+  </div>
+  <div class="collapsible">
+  <div class="collapse-control">
+    <div class="logo2">
+      <svg width="100" class="c-slacklogo--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" shape-rendering="geometricPrecision"><title>Slack</title><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#097eff"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#097eff"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ecb12f"></path><g><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#ecb12f"></path></g></svg>
+    </div>
+    <span class="close-icon"><i class="fa-solid fa-xmark"></i></span>
+  </div>
+
+  <div class="hyperlinks">
+    <ul class="menu-items">
+      <li class="menu-link"><a href="#">Product  </a></li>
+      <li class="menu-link"><a href="#">Solutions</a></li>
+      <li class="menu-link"><a href="#">Enterprise</a></li>
+      <li class="menu-link"><a href="#">Resources</a></li>
+      <li class="menu-link"><a href="#">Pricing  </a></li>
+      <li class="menu-link sign"><a href="#">Sign in  </a></li>
+    </ul>
+  <div class="workspace-btn">
+    <span class="search-icon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <a class="signIn" href="#">Sign in</a>
+      <a class="tSales" href="#">TALK TO SALES</a>
+      <a class="nWorkspace" href="./workspace.html">CREATE A NEW WORKSPACE</a>
+  </div> 
+  </div>
+  </div>
+    </nav>
+    </header>
+  <!--END OF BARAKATS'S SECTION - HEADER AND NAV-->
+    <main>
+        <section class="hero-section">
+            <div class="slackForIos">
+              <div class="iosTitle">
+                <h1>Great teamwork starts with a <span class="yellow-txt">digital HQ</span></h1>
+                <p>With all your people, tools and communication in one place, you can work faster and more flexibly than ever before.</p>
+                
+                 <div class="sign-btns">
+                  <a class="iosBtn1 mail" href="">SIGN UP WITH EMAIL</a>
+                  <div class="iosBtn google">
+                    <img class="google-logo" src="./IMAGES/google-icon.jfif" alt="">
+                    <a class="iosBtn2" href="">SIGN UP WITH GOOGLE</a>
+                  </div>
+                 </div>
+
+                <p class="slack-note">Slack is free for as long as you'd like</p>
+              </div>
+              <div class="iosImg">
+                <!-- <img src="./IMAGES/img-campaign-hero.jpg" alt=""> -->
+                <video  loop autoplay muted>
+                  <source src="./IMAGES/hero-product-ui.webm" type="video/mp4">
+                </video>
+              </div>
+            </div>
+        </section>
+
+        <!-- TRUSTED BY COMPANIES ALL OVER THE WORLD section - SECTION ONE--> 
+        <section class="section-one">
+          
+
+
+        </section>
+        <!--END OF BARAKATS'S SECTION -->
+
+        <!--BEGINNING OF  BUKOLA'S SECTION  --> 
+        <!-- Bring your team together SECTION TWO-->
+        <section class="section-two">
+            
+        </section>
+        <!-- Choose how you want to work SECTION THREE-->
+        <section class="section-three">
+            
+        </section>
+        <!-- Move faster with your tools in one place SECTION FOUR -->
+        <section class="section-four">
+            
+        </section>
+        <!--END OF BUKOLA'S SECTION -->
+
+        <!-- BEGINNING OF FAVOUR'S SECTION - SECTION FIVE-->
+        <section class="section-five">
+          <div class="section-five-partA">
+            <div class="emoji-1">
+              <div class="building"><img src="./IMAGES/office-building_1f3e2.png" alt=""> 11</div>
+              <div class="barChart"><img src="./IMAGES/bar-chart_1f4ca.png" alt="">12</div>
+            </div>
+              <h2>Teams large and small rely on Slack</h2>
+              <div class="emoji-2">
+                <div class="chart">
+                  <div class="chart-sec">
+                    <img src="./IMAGES/chart-with-upwards-trend_1f4c8.png" alt="">
+                  <div class="chart-text">5</div>
+                  </div>
+                </div>
+                <p id="section-five-text-1">
+                  Slack securely scales up to support collaboration at the world’s biggest companies.
+                </p>
+                <div class="shake">
+                  <div class="handshake">
+                  <img src="./IMAGES/handshake_1f91d.png" alt=""> 
+                  <div class="shake-text">9</div>
+                  </div>
+              </div>
+              </div>
+              <div class="emoji-3">
+                <div class="padlock">
+                  <div class="padlock-group">
+                  <img src="./IMAGES/locked_1f512.png" alt="">
+                  <div class="padlock-text">27</div>
+                  </div>
+                </div>
+                <div class="section5Buttons">
+                  <div class="buttons-sec5">
+                    <div class="section-five-button1">
+                      <a href="https://slack.com/enterprise">MEET SLACK FOR ENTERPRISE</a>
+                    </div>
+                    <div class="section-five-button2">
+                      <a href="https://slack.com/contact-sales?from_home=1">TALK TO SALES</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="girl-laptop">
+                  <img src="./IMAGES/woman-technologist2.png" alt=""> 
+                  <p class="girl-laptop-text">8</p>
+                </div>
+              </div>
+          </div>
+          <div class="section-five-partB">
+            <div class="section-five-partB-1">
+              <h1>85%</h1>
+              <p id="section-five-text-2">of users say Slack has improved communication<sup>*</sup></p>
+            </div>
+            <div class="section-five-partB-2">
+              <h1>86%</h1>
+              <p id="section-five-text-3">feel their ability to work remotely has improved<sup>*</sup></p>
+            </div>
+            <div class="section-five-partB-3">
+              <h1>88%</h1>
+              <p id="section-five-text-4">feel more connected to their teams <sup>*</sup></p>
+            </div>
+          </div>
+        </section>
+
+          <!-- BEGINNING OF ONIZE ALIYU'S PART -->
+          <!-- We were able to create a large virtual network of -->
+          <section class="section-six">
+            
+          </section>
+          <!-- END OF ONIZE ALIYU'S PART - SECTION SIX -->
+
+        <!--BEGINNING OF JOY'S SECTION -->
+        <!-- Take a deeper dive into a new way to work - SECTION SEVEN -->
+        <section class="section-seven">
+            <h1 class="section-title">
+              Take a deeper dive into a new way to work
+            </h1>
+            <div class="page">
+              <div class="card-collections">
+                <div class="ccard c-one" id="ccard1">
+                 <div class="card-txt">
+                  <p class="card-name">Collection</p>
+                  <h3>Slack as your digital HQ</h3>
+                 </div>
+                 <div class="collection-img">
+                  <img class="c-image" src="./IMAGES/collection.jpg" alt="collection">
+                 </div>
+  
+                 <div class="card-footer">
+                  SEE ALL <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                 </div>
+                </div>
+                <div class="ccard c-two" id="ccard2">
+                  <div class="collection-img">
+                   <img class="c-image" src="./IMAGES/resource.gif" alt="collection">
+                  </div>
+                 <div class="card-txt">
+                  <p class="card-name">Resources</p>
+                  <h3>See how others are building their digital HQ</h3>
+                </div>
+                <div class="card-footer">
+                  READ MORE <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                 </div>
+                
+                </div>
+                <div class="ccard c-three" id="ccard3">
+                  <div class="collection-img">
+                   <img class="c-image" src="./IMAGES/webinar.webp" alt="collection">
+                  </div>
+                 <div class="card-txt">
+                  <p class="card-name">Webinar</p>
+                  <h3>Win the battle for talent with a digital HQ</h3>
+                </div>
+                <div class="card-footer">
+                  WATCH MORE <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                 </div>
+                
+                </div>
+                <div class="ccard c-four" id="ccard4">
+                  <div class="collection-img">
+                   <img class="c-image" src="./IMAGES/e-book.gif" alt="collection">
+                  </div>
+                 <div class="card-txt">
+                  <p class="card-name">E-book</p>
+                  <h3>Reinventing work: New imperatives for the future of working</h3>
+                </div>
+                <div class="card-footer">
+                  GET E-BOOK<span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                 </div>
+                
+                </div>
+              </div>
+              <div class="pagination">
+              <div class="control">
+                <a href="#ccard1" ></a>
+              </div>
+               <div class="control">
+                <a href="#ccard2" ></a>
+               </div>
+                <div class="control">
+                  <a href="#ccard3" ></a>
+                </div>
+                <div class="control">
+                  <a href="#ccard4" ></a>
+                </div>
+              </div>
+            </div>
+        </section> 
+        <!--END OF  JOY'S SECTION --> 
+        <!-- NEW JOY -->
+        <section class="new-seven">
+          <div class="sect-seven" id="cards">
+            <div class="head">
+              <h2>Take a deeper dive into a new way to work</h2>
+            </div>
+            <div class="card-list swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div  class="card swiper-slide" id="card-1" >
+                  <div>
+                    <span>Collection</span>
+                    <h3>Slack as your digital HQ</h3>
+                  </div>
+                  <img src="IMAGES/img-promo-01.png" alt="">
+                  <div class="bottom-flex">
+                    <span>Read more</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+                <div class="card swiper-slide" id="card-2">
+                  <img src="IMAGES/img-promo-02.jpg" alt="">
+                  <div>
+                    <span>Resource</span>
+                    <h3>See how others are building their digital HQ</h3>
+                  </div>
+                  <div class="bottom-flex">
+                    <span>Read more</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#1264A3" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+                <div class="card swiper-slide" id="card-3">
+                  <img src="IMAGES/img-promo-03.png" alt="">
+                  <div>
+                    <span>Webinar</span>
+                    <h3>Win the battle for talent with a digital HQ</h3>
+                  </div>
+                  <div class="bottom-flex">
+                    <span>Watch now</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#1264A3" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+                <div class="card swiper-slide" id="card-4">
+                  <img src="IMAGES/img-promo-04.jpg" alt="">
+                  <div>
+                    <span>E-book</span>
+                    <h3>Reinventing work: New imperatives for the future of working</h3>
+                  </div>
+                  <div class="bottom-flex">
+                    <span>Get E-book</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#1264A3" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable">
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet" ></span>
+              <span class="swiper-pagination-bullet"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- HAPPINESS'S SECTION -->
+        <!-- Welcome to your new digital HQ -->
+        <section class="section-eight">
+            <h2>Welcome to your new digital HQ</h2>
+            <div class="workspacebtn-part">
+                <a class="Sales-btn" href="#">TALK TO SALES</a>
+                <a class="Workspace-btn" href="./workspace.html">TALK TO SALES</a>
+            </div> 
+        </section>
+         <!--END OF HAPPINESS'S SECTION -->
+    </main>
+
+    <!-- FAVOUR'S SECTION -->
+    <footer>
+      <div class="footer-1-slack-icon">
+        <img src="/IMAGES/slack-logo.png" alt="slack logo">
+      </div>
+        <section class="section-footer">
+          <div class="footerPartA">
+            <div class="footer-1">
+              <img src="/IMAGES/slack-logo.png" alt="slack logo">
+            </div>
+            <div class="footer-2">
+              <h3>WHY SLACK?</h3>
+              <span  onclick="footer2()"><i class="ri-arrow-right-s-line" id="arrowF2"></i></span>
+              <div id="footer-2-text">
+                <p class="footer-A-text">Slack vs Emails</p>
+                <p class="footer-A-text">Channels</p>
+                <p class="footer-A-text">Engagement</p>
+                <p class="footer-A-text">Scale</p>
+                <p class="footer-A-text">Watch the Demo</p>
+              </div>
+            </div>
+            <div class="footer-3">
+              <h3>PRODUCT</h3>
+              <span onclick="footer3()"><i class="ri-arrow-right-s-line" id="arrowF3"></i></span>
+              <div id="footer-3-text">
+                <p class="footer-A-text">Features</p>
+                <p class="footer-A-text">Integrations</p>
+                <p class="footer-A-text">Enterprise</p>
+                <p class="footer-A-text">Solutions</p>
+              </div>
+            </div>
+            <div class="footer-4">
+              <h3>PRICING</h3>
+              <span  onclick="footer4()"><i class="ri-arrow-right-s-line" id="arrowF4"></i></span>
+              <div id="footer-4-text">
+                <p class="footer-A-text">Plans</p>
+                <p class="footer-A-text">Paid vs. Free</p>
+              </div>
+            </div>
+            <div class="footer-5">
+              <h3>RESOURCES</h3>
+              <span onclick="footer5()"><i class="ri-arrow-right-s-line" id="arrowF5"></i></span>
+              <div id="footer-5-text">
+                <p class="footer-A-text">Partners</p>
+                <p class="footer-A-text">Developers</p>
+                <p class="footer-A-text">Community</p>
+                <p class="footer-A-text">Apps</p>
+                <p class="footer-A-text">Blog</p>
+                <p class="footer-A-text">Help Center</p>
+                <p class="footer-A-text">Events</p>
+              </div>
+            </div>
+            <div class="footer-6">
+              <h3>COMPANY</h3>
+              <span onclick="footer6()"><i class="ri-arrow-right-s-line" id="arrowF6"></i></span>
+              <div id="footer-6-text">
+                <P class="footer-A-text">About Us</P>
+                <P class="footer-A-text">Leadership</P>
+                <P class="footer-A-text">Investor Relations</P>
+                <P class="footer-A-text">News</P>
+                <p class="footer-A-text">Media Kit</p>
+                <p class="footer-A-text">Careers</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="footerPartB">
+            <div class="footerPartB-1">
+              <div class="footerPartB-a">
+              <p>Status</p>
+              <p>Privacy</p>
+              <p>Terms</p>
+              <p>Cookie Prefrences</p>
+              <p>Contact Us</p>
+              <div id="footer-change">
+                <i class="ri-global-line footer-globe"></i>
+                <div>Change Region</div>
+                <div class="footer-arrow">
+                  <i class="ri-arrow-down-s-line"></i>
+                </div>
+              </div>
+              </div>
+              <div class="footerPartB-b">
+                <div id="footer-download"><i class="ri-download-cloud-line download-icon"></i><div> Download Slack</div></div>
+                <div class="footer-icons">
+                  <i class="ri-twitter-fill footer-icon"></i>
+                  <i class="ri-facebook-box-fill footer-icon"></i>
+                  <i class="ri-youtube-fill footer-icon"></i>
+                  <i class="ri-linkedin-box-fill footer-icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footerPartB-2">
+              <p>©2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. 
+                Various trademarks held by their respective owners.
+              </p>
+            </div>
+          </div>
+        </section>
+    </footer>
+    <!--END OF FAVOUR'S SECTION -->
+    <!-- Javascript -->
+    <script src="lib/swipper.min.js"></script>
+    <script>
+      //  Initialize Swiper
+        let swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
+    <script src="./JS/slack.js"></script>
+</body>
+</html>

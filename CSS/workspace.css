@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 500px;
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.container #container-img{
+    width: 9rem;
+    margin: 0 0 2rem 0;
+}
+
+.container h1{
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+#container-text{
+    margin: 1rem 0 2rem 0;
+    font-size: 18px;
+    color: #454245;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+input[type=text]:focus{
+    border: 5px solid rgb(66,133,244);
+}
+
+#continue-btn{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+    background-color: #522558;
+    color: #fff;
+    border: none;
+}
+
+#continue-btn:hover{
+    background-color: #703578;
+}
+
+#google-btn{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid rgb(66,133,244);
+    color: rgb(66,133,244);
+}
+
+.google-part{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#google-img{
+    width: 17px;
+}
+
+#apple-btn{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+#already{
+    font-size: 15px;
+    margin: 1rem 0 1rem 0;
+    color: #616061;
+}
+
+#sign{
+    color: #6179B3;
+}
+
+#sign:hover{
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #696969;
+    font-size: .9rem;
+    margin: 2rem 0 0 0;
+}
+
+.footer p:hover{
+    text-decoration: underline;
+}
+
+/* horizontal part */
+.horizontal{
+    display: flex;
+    margin: 1rem 0;
+    font-size: 15px;
+    padding: 0 1rem 0 3rem;
+}
+
+.horizontal p{
+    padding: 0 1rem;
+}
+
+.line1{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.line2{
+    width: 40%;
+    margin-top: 10px;
+}
+
+/* mediaquery */
+@media screen and (max-width:576px){
+    .footer {
+        margin: 20rem 0 0 0;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    #container-text{
+        font-size: 16px;
+    }
+    .container{
+        max-width: 800px;
+    }
+    @media screen and (max-width:576px){
+        input[type=text] {
+            margin: 10px 0 10px 0;
+        }
+    }
+}

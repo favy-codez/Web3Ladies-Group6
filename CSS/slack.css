@@ -1,28 +1,987 @@
+/* GENERAL STYLING */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif; */
 }
 
 /* styling for horizontal line */
+body{
+    /* overflow-x: hidden; */
+    font-family: 'Roboto', sans-serif;
+}
 hr{
     display: block;
     margin-left: 5%;
     margin-right: 5%;
-    border: #fff 1.5px;
+    border: #EBEAEB 0.5px;
     border-style: inset;
 }
 
-/* FOOTER SECTION */
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* BARAKATS'S STYLING  */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+img,video{
+    display: block;
+    width: 100%;
+}
+:root{
+    --bg-color:#4a154b;
+    --purple:#611f69;
+    --bg-purple:#400d40;
+    --bg-color2:#f6efe8;
+    --highlight-color:#1264a3;
+    --google-blue:#4285f4;
+    --white:#fff;
+    --black:#000;
+    --gray:#9e9c9c;
+    --yellow-txt:#ecb22e;
+}
+header,.hero-section{
+    background-color: var(--bg-color);
+}
+.hero-section{
+    padding-bottom: 3rem;
+}
+header{
+    padding: 1rem 2rem ; 
+    height: 10vh;
+}
+
+/* header */
+nav{
+    display: flex;
+    flex-direction: column;
+}
+.nav-control{
+    display: flex;
+    justify-content: space-between;
+}
+.search-icon1,.menu-icon{
+    color: var(--white);
+}
+.search-icon1{
+    margin-right: 1rem;
+}
+
+/* collapsible */
+.close-icon{
+    font-size: 1.5rem;
+}
+.collapsible{
+    background-color: var(--gray);
+    /* padding: 2rem; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 200ms ease;
+}
+.hide{
+transform:translateX(0);
+}
+
+.search-icon2{
+    display: none;
+}
+.collapse-control{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.workspace-btn{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.tSales,.nWorkspace,.signIn{
+    text-align: center;
+    padding:  1rem;
+    font-weight: 500;
+    width: 100%;
+}
+.tSales{
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    margin-bottom: 2rem;
+}
+.tSales:hover{
+    border: 2px solid var(--white);
+}
+.nWorkspace {
+    background-color: var(--purple);
+    color: var(--white);
+} 
+.menu-items{
+    padding: 1.5rem;
+}
+.menu-link a{
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.menu-link:hover {
+    text-decoration: underline;
+}
+.signIn{display: none;}
+/* hero */
+.iosTitle{
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+.iosTitle h1{
+    font-size: 2.5rem ;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+}
+.iosTitle h1 .yellow-txt{
+    color: var(--yellow-txt);
+}
+.iosTitle p{
+    font-size: 1.1rem;
+    margin-bottom: 4rem ;
+    line-height: 25px;
+}
+.iosTitle .iosBtn1{
+    background-color: var(--white);
+    display: block;
+    padding: 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.iosTitle .iosBtn{
+    display: block;
+    padding: 0.4rem;
+    background-color: var(--google-blue);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.iosBtn2{
+    flex-basis: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--white);
+    padding: 0 0.3rem;
+}
+.google-logo{
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    flex-basis: 10%;
+    cursor: pointer;
+}
+.slack-note{
+    display: none;
+}
+.support-brand{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.brand{
+    width: 120px;
+}
+.fox{
+    width: 100px;
+}
+.target-logo{
+    width: 60px;
+}
+@media only screen and (min-width:768px){
+/* hero */
+header{
+    height: 6vh;
+}
+.slackForIos{
+    padding: 1rem 0 3rem 0;
+    display: grid;
+    grid-template-columns: 55% 76%;
+    gap: 2%;  
+}
+.iosImg video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.iosTitle{
+margin-bottom: 0;
+text-align: left;
+padding: 2rem;
+}
+
+.iosTitle h1{
+    font-size: 3rem;
+    line-height: 53px;
+}
+.iosTitle p{
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+.iosTitle .iosBtn1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+}
+/* header */
+@media only screen and (min-width:1071px) {
+    
+    nav{
+        margin-inline: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo2,.close-icon,.search-icon1,.menu-icon{
+        display: none;
+    }
+    .nav-control{
+        flex-basis: 15%;
+    }
+    .search-icon2{
+        display: initial;
+        margin-right: 2rem;
+        color: var(--white);
+    }
+    .hyperlinks{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-items{
+        display: flex;
+        align-items: center;
+    }
+    .menu-items .menu-link a{
+        color: var(--white);
+        margin: 0 1rem;
+    }
+    .collapsible{
+        background-color: transparent;
+        flex-basis: 85%;
+        padding: 0;
+        position: relative;
+        transform: translateY(0);
+        transition: 200ms ease;
+        
+    }
+    .collapse{
+        border: 2px solid green;
+    }
+    .collapse-control{
+        padding: 0;
+    }
+    .workspace-btn{
+        position: relative;
+        flex-direction: row;
+        padding: 0;
+        width: 40%;
+        background-color: transparent;
+    }
+    .tSales,.nWorkspace{
+        text-align: center;
+        padding:  0.5rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    .tSales {
+        color: var(--white);
+        border: 2px solid var(--white);
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    .nWorkspace {
+        background-color: var(--white);
+        color: var(--purple);
+        flex-direction: row;
+    } 
+    /* hero */
+    .slackForIos{
+        padding-top: 4rem;
+    grid-template-columns: 55% 50%;
+
+    }
+    .iosTitle{
+        padding: 2rem;
+    }
+    .iosTitle h1{
+        width: 700px;
+        font-size: 4rem;
+        line-height: 65px;
+        color: white;
+    }
+    .iosTitle p{
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+    .iosTitle .iosBtn1{
+        margin-bottom: 0;
+        margin-right: 1rem;
+        padding: 0.92rem;
+    }
+    
+    .sign-btns{
+        display: flex;
+        align-items: center;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+    .google-logo{
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+    }
+    .iosTitle .iosBtn1{
+        padding: 1.5rem 4rem;
+    }
+    .iosTitle .iosBtn{
+        padding: 0.4rem 3rem 0.4rem 0.3rem;
+    }
+    .iosTitle .iosBtn2{
+        font-size: 0.8rem;
+    }
+    .sign{
+        display: none;
+    }
+    .signIn{
+        display: initial;
+        color: var(--white);
+    }
+    .slack-note{
+        display: initial;
+    }
+   
+    
+}
+/*END OF BARAKATS'S STYLING  */
+
+/* BEGINNING OF BUKOLA'S STYLING */
+
+
+
+/* END OF BUKOLA'S STYLING */
+
+/* FAVOUR- SECTION FIVE */
+.section-five{
+    padding: 3rem 0 6rem 0;
+}
+
+.section-five-partA{
+    position: relative;
+}
+
+.section-five h2{
+    margin: 1.7rem 0 0 0;
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.section-five #section-five-text-1{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 2rem auto 1rem auto;
+}
+
+.emoji-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem 0 10rem;
+    text-align: center;
+}
+
+.building {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 5px;
+    box-shadow: 0px 0px 10px rgb(204, 196, 196);
+    padding: 10px ;
+    border-radius: 50px;
+}
+
+.building img{
+    width: 2rem;
+}
+.barChart{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0px 0px 10px rgb(204, 196, 196);
+    padding: 0px 4px;
+    border-radius: 17px;
+}
+.barChart img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.chart{
+    font-size: 1.6rem;
+    display: inline;
+    position: absolute;
+    left: 5%;
+    padding: 2px 8px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+}
+
+.chart img{
+    width: 1.4rem;
+}
+
+.chart-sec{
+    display: flex;
+}
+
+.handshake{
+    display: flex;
+    gap: 5px;
+}
+
+.shake{
+    font-size: 1.4rem;
+    display: inline;
+    position: absolute;
+    left: 79%;
+    top: 62%;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+    padding: 2px 4px;
+    border-radius: 17px;
+}
+
+.shake img{
+    width: 2rem;
+}
+
+.padlock{
+    font-size: 1.4rem;
+    display: inline;
+    position: absolute;
+    left: 18%;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+    padding: 2px 4px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+}
+
+.padlock img{
+    width: 1.5rem;
+}
+
+.padlock-group{
+    display: flex;
+}
+
+.girl-laptop{
+    font-size: 1.4rem;
+    display: inline;
+    position: absolute;
+    left: 86%;
+    display: flex;
+    padding: 2px 8px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px rgb(207, 202, 202);
+}
+
+.girl-laptop img{
+    width: 2rem;
+}
+
+.emoji-3{
+    display: block;
+    margin: 3.4rem auto 1rem auto;
+    width: 550px;
+}
+
+.section5Buttons{
+    display: inline-block;
+}
+
+.buttons-sec5{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-five-button1 a{
+    background-color: #4A154B;
+    color: #fff;
+    text-decoration: none;
+    border: 5px solid;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section-five-button1 a:hover{
+    background-color: #300b30;
+}
+
+.section-five-button2 a{
+    background-color: transparent;
+    color: #4A154B;
+    border: 1px solid #4A154B;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 33px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-five-button2 a:hover{
+    border: 1.4px solid #39123a;
+}
+
+.section-five-partB{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    margin: 7rem 0 6rem 0;
+}
+
+.section-five-partB p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.section-five-partB h1{
+    font-size: 4rem;
+    color: #4A154B;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+#section-five-text-2{
+    width: 60%;
+}
+
+#section-five-text-3{
+    width: 60%;
+}
+
+#section-five-text-4{
+    width: 80%;
+}
+
+/*END OF FAVOUR'S SECTION-FIVE */
+
+
+/* ONIZE ALIYU'S SECTION - SECTION SIX */
+
+
+/*END OF ONIZE ALIYU'S PART -  SECTION SIX */
+
+
+/* BEGINNING OF JOY'S STYLING - section seven  */
+.section-seven{
+    background-color: var(--bg-color2);
+    padding-bottom: 5rem;
+}
+.section-seven h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 3rem;
+}
+.card-collections{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    grid-auto-flow: column;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; 
+}
+.ccard{
+    scroll-snap-align: center;
+    position: relative;
+    width: 268px;
+    margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+.ccard:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out; 
+}
+.c-one{
+    background-color: var(--bg-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ccard .c-one .collection-img img{
+    margin: 3rem 0 1rem 0;
+}
+.card-txt{
+    padding: 1.3rem 1rem;
+}
+.card-txt .card-name{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.card-txt h3{
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+}
+.card-footer{
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.card-footer span{
+    float:right;
+}
+.c-two,.c-three,.c-four{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c-two .collection-img,.c-three .collection-img, .c-four .collection-img{
+    margin: 0;
+    flex-basis: 50%;
+    padding: 0.5rem;
+}
+.c-two .collection-img img,.c-three .collection-img img, .c-four .collection-img img{
+    width: 100%;
+    height: 100%;
+}
+.c-two .card-txt, .c-three .card-txt, .c-four .card-txt{
+    flex-basis: 40%;
+}
+.c-two .card-footer, .c-three .card-footer, .c-four .card-footer{
+color: var(--highlight-color);
+}
+.section-seven .pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-seven .pagination div {
+    position: relative;
+    background-color: var(--gray) ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+.section-seven .pagination div a{
+    position: absolute;
+    inset: 0;
+    background-color: black;
+}
+.section-seven .pagination div:hover{
+    background-color: var(--purple);
+}
+@media only screen and (min-width:768px) {
+    .ccard{
+        width: 258px;
+    } 
+    .pagination div{
+        display: none;
+    }
+    .card-collections{
+        grid-auto-flow:row;
+        margin-inline:auto;
+        max-width: 60%;
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+}
+@media only screen and (min-width:1071px){
+    .ccard{
+        width: 90%;
+    }
+    .card-collections{
+        max-width: 80%;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .pagination div{
+        display: none;
+    }
+}
+/* END OF JOY'S STYLING - section seven */
+/*joy new stylying  */
+.new-seven{
+    padding: 30px;
+    position:relative;
+    background-color: #f4ede4 ;
+    justify-content:center;
+    
+}
+ .head h2{
+    font-weight: 700;
+    line-height: 1.1875;
+    letter-spacing: -.3px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: #000;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+.swiper-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:2%;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+.swiper-wrapper .card{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    min-height: 420px;
+    flex-direction: column;
+    border-bottom: none;
+    max-width: 265px;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    transition: transform 420ms cubic-bezier(.165,.84,.44,1);
+}
+.swiper-wrapper .card:hover{
+    transform:scale(1.1);
+    transition: transform 1s ease-in-out; 
+
+}
+.card img{
+    bottom: auto;
+    object-fit: cover;
+    width: 100%;
+}
+#card-1{
+    background-color: #4a154b;
+}
+#card-1 h3{
+    color: #fff !important;
+}
+#card-1 span{
+    color: #fff !important;
+}
+
+.card h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: #000;
+    margin: 0.5rem 0 1rem;
+    line-height: 30px;
+    justify-content: center;
+}
+.card span{
+    font-size: .875rem;
+    font-weight: 400;
+    color: #454245;
+    margin: 8px 0 0;
+    display: inline-block;
+}
+.card .bottom-flex{
+    display: flex;
+    flex-basis: 100%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    white-space: normal;
+    border: none;
+    height: 3rem;
+    margin-top: 50px;
+    align-items: flex-end;
+    
+    
+
+}
+
+.card .bottom-flex span{
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: .8px;
+    font-size: .875rem;
+    text-transform: uppercase;
+    color: #1264a3;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.card .bottom-flex svg {
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    right: 15px;
+    
+}
+.swiper-pagination{
+    display:none;
+}
+
+@media only screen and (max-width:600px){
+    
+    .swiper-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+        margin-left: 0;
+        /* overflow-x: hidden;
+     scroll-behavior: smooth;
+      scroll-snap-type: x mandatory; */
+    }
+    /* .card{
+        max-width:285px;
+    } */
+    
+.head h2{
+    padding:2px;
+    font-size: 25px;
+    justify-content: center;
+}
+.swiper-pagination {
+    display: block;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    margin:0 8px;
+    text-align: center;
+
+}
+.swiper-container-horizontal>.swiper-pagination {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #611f69;
+}
+
+}
+/* end of Joy new styling */
+
+
+/* BEGINNING OF FAVOUR'S STYLING - SECTION-EIGHT*/
+.section-eight{
+    background-image: url(/80588/spacesuit/source/images/backgrounds/bg-halftone-black-20p@2x.png);
+    padding:5rem 0 5rem 0;
+    min-height: 370px;
+    background-color: #4a154b;
+    color: #fff;
+    text-align: center;
+    clip-path: ellipse(75% 100% at center top);
+}
+
+.section-eight h2{
+    margin: 0 0 2.3rem 0;
+}
+
+.workspacebtn-part{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sales-btn,.Workspace-btn {
+    text-align: center;
+}
+
+.Sales-btn{
+    color: var(--purple);
+    background-color: var(--white);
+    border: 1px solid var(--purple);
+    padding: 20px 44px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.Sales-btn:hover{
+    border: 1.3px solid var(--purple);
+}
+
+.Workspace-btn{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-size: 12px;
+    font-weight: 900;
+    padding: 20px 44px;
+    border-radius: 5px;
+}
+
+.Workspace-btn:hover{
+    border: 1.3px solid var(--white);
+}
+
+/* END OF FAVOUR'S SECTION-8 STYLING-  */
+
+
+/* FAVOURS STYLING - FOOTER */
 .footerPartA{
     display: flex;
     justify-content: space-between;
-    padding: 4rem 12rem 3rem 4rem;
+    padding: 4rem 10rem 2rem 4rem;
+}
+
+.footer-1{
+    margin-right: -8rem;
 }
 
 .footer-1 img{
-    width: 50%;
+    width: 47%;
+    display: block;
+}
+
+.footer-1-slack-icon{
+    display: none;
 }
 
 .footerPartA h3{
@@ -31,21 +990,433 @@ hr{
 }
 
 .footer-A-text{
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 43px;
     color: rgb(37, 37, 36);
+    cursor: pointer;
 }
 
 .footer-A-text:hover{
-    color: rgb(49, 49, 179);
+    color: #1264B8;
 }
 
 /* footer part B */
 .footerPartB{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 6rem 0 5rem;
 }
 
 .footerPartB-1{
     display: flex;
+    justify-content: space-between;
 }
+
+.footerPartB-a{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.footerPartB-a p{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.footerPartB-a p:hover{
+    color: #1264B8;
+}
+
+.footerPartB-b{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+#footer-download{
+   color: #1264B8;
+   font-size: 15px;
+   font-weight: 600;
+   margin-top: 0;
+   display: flex;
+   gap: 3px;
+}
+#footer-download div{
+    line-height: 25px;
+}
+.download-icon{
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.footer-icon{
+    font-size: 1.4rem;
+}
+
+.footerPartB-2{
+    font-size: 12px;
+    margin: 0 0 2rem 0;
+}
+
+.footer-globe{
+    color: #b4a5a5;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+#footer-change{
+    display: flex;
+    gap: 3px;
+}
+
+#footer-change div{
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 1000;
+}
+
+#footer-change:hover{
+    color: #1264B8;
+}
+
+.ri-arrow-right-s-line{
+    display: none;
+}
+
+/*END OF FAVOURS STYLING - FOOTER */
+
+
+/*****************************************MEDIA QUERY SECTION ********************************************************/
+
+@media screen and (max-width:992px){
+    /* media query for section-eight (favour) */
+    .section-eight h2 {
+        font-size: 3.5rem;
+    }
+    .workspacebtn-part{
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 0 2.6rem 0;
+    }
+    .Sales-btn{
+        width: 80%;
+        font-size: 16px;
+    }
+    .Workspace-btn{
+        width: 80%;
+        font-size: 16px;
+    }
+    /* END of media query for section-eight (favour) */
+    /* BEGINNING OF FAVOUR- SECTION FIVE */
+    .handshake , .girl-laptop, .barChart, .padlock, .emoji-1, .chart{
+        display: none;
+    }
+    .section-five h2{
+        font-size:2rem ;
+    }
+    .section-five-partB{
+        gap: 0.5rem;
+        padding: 0 8rem 0 8rem;
+    }
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    .footer-1{
+        display: none;
+    }
+    .footer-1-slack-icon{
+        display: block;
+    }
+    .footer-1-slack-icon img{
+        width: 7rem;
+        margin: 0 0 0 4rem;
+    }
+    .footerPartA{
+        padding: 4rem 4rem 2rem 6rem;
+    }
+    .footerPartB{
+        padding: 2rem 3rem 0 5rem;
+    }
+    .footerPartB-2{
+        padding: 0 0 2rem 0rem;
+    }
+    .footerPartB-a p{
+        font-size: 10px;
+    }
+    /* END OF FAVOUR- FOOTER */
+}
+
+@media screen and (max-width:768px){
+    /* media query for section-eight (favour) */
+    .section-eight h2{
+        font-size: 2.5rem;
+    }
+    /* END of media query for section-eight (favour) */
+
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    .section-five-partB{
+        gap: 0rem;
+        padding: 0 3rem 0 4rem;
+    }
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    .footerPartB{
+        padding: 2rem 0rem 0 0.9rem;
+    }
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+@media screen and (max-width:576px){
+    /* media query for section-eight (favour) */
+    .section-eight h2{
+        font-size: 2rem;
+    }
+    /* END of media query for section-eight (favour) */
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    .section-five #section-five-text-1{
+        padding: 0 1rem;
+    }
+    .buttons-sec5{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .section5Buttons{
+        display: block;
+    }
+    .section-five-button1 {
+        width: 100%;
+    }
+    .section-five-button1 a{
+        padding: 20px 160px;
+    }
+    .section-five-button2 a{
+        padding: 20px 213px;
+        font-size: 16px;
+    }
+    .section-five-partB{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 110px;
+    }
+    .section-five-partB p{
+        text-align: left;
+    }
+    #section-five-text-2{
+        width: 180%;
+    }
+    #section-five-text-3{
+        width: 180%;
+    }
+    #section-five-text-4{
+        width: 180%;
+    }
+    .section-five-partB-1{
+        margin: 6rem 0 0 0;
+    }
+    .section-five-partB-2{
+        margin: 2rem 0 2rem 0;
+    }
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    .footer-1-slack-icon img{
+        margin: 0 0 0 0rem;
+    }
+    .footerPartA{
+        padding: 4rem 2rem 2rem 2rem;
+    }
+    .footerPartB-a{
+        flex-direction: column;
+    }
+    .footerPartB-1{
+        display: block;
+    }
+    .footerPartB-b{
+        flex-direction: column;
+    }
+    .footer-icons{
+        display: flex;
+        gap: 7rem;
+    }
+    .footerPartB-a p{
+        font-size: 12px;
+    }
+    #footer-change div{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: -50px;
+    }
+    .footer-globe{
+        font-size: 1rem;
+    }
+    #footer-download{
+        margin: 10px 0;
+    }
+    .footer-A-text{
+        font-size: 10px;
+    }
+    .footerPartA{
+        padding: 4rem 9.4rem 2rem 1rem;
+    }
+    .footerPartA h3{
+        font-size: 0.7rem;
+        padding: 0 0 10px 0;
+    }
+    
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+@media screen and (max-width:375px){
+    /* media query for section-eight (favour) */
+    .section-eight h2{
+        font-size: 2rem;
+    }
+    .Sales-btn{
+        width: 90%;
+    }
+    .Workspace-btn{
+        width: 90%;
+    }
+    .section-eight{
+        clip-path: ellipse(105% 100% at center top);
+    }
+    /* END of media query for section-eight (favour) */
+    /* MEDIA QUERY FOR- SECTION FIVE */
+    .section-five h2{
+        font-size: 1.1rem;
+        width: 90%;
+        padding: 0 4rem 0 4rem;
+    }
+    .section-five #section-five-text-1{
+        font-size: 1.125rem;
+        padding: 0 auto;
+    }
+    .section-five-partA h2{
+        font-size: 2rem;
+        margin-right: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .buttons-sec5{
+        align-items: unset;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin: 3px 15px;
+        justify-content: center;
+    }
+    .section-five-button1{
+        width: 60%;
+        height: 57px;
+        
+    }
+    .section-five-button1 a{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: .875rem;
+        height: 57px;
+        width: 345px;
+        border: 0px solid white;
+        border-radius: 5px;
+        padding: 19px 40px 20px 40px;
+        letter-spacing: 1px;
+    }
+    .section-five-button2{
+        width: 60%;
+        height: 57px;
+    }
+    .section-five-button2 a{
+        display: inline-block;
+        padding: 19px 20px;
+        font-size: .875rem;
+        height: 57px;
+        width: 345px;
+        letter-spacing: 1px;
+    }
+    .section-five-partB{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        width: 190px;
+    }
+    .section-five-partB-1{
+        text-align: center;
+    }
+    #section-five-text-2, #section-five-text-3, #section-five-text-4{
+        width: 190px;
+    }
+    /* END OF FAVOUR- SECTION FIVE */
+
+    /* MEDIA QUERY FOR  FAVOUR- FOOTER */
+    hr{
+        width: 93%;
+        display: block;
+        margin-left: 2%;
+        margin-right: 0%;
+        border: #EBEAEB 0.5px;
+        border-style: inset;
+    }
+    .footerPartA{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem 0 0.5rem;
+    }
+    .footer-icons{
+        gap: 5rem;
+        font-size: 3rem;
+    }
+    .footerPartB-2{
+        width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .footerPartB-1{
+        padding: 0 0 0 0.5rem;
+    }
+    .footerPartB{
+        padding: 2rem 0 0 0.2rem;
+        font-weight: 200;
+        font-size: 15px;
+    }
+    .section-five-partB p{
+        text-align: center;
+    }
+    .footerPartA h3{
+        font-size: 15px;
+    }
+    .footerPartA p{
+        line-height: 30px;
+    }
+    #footer-2-text, #footer-3-text, #footer-4-text, #footer-5-text, #footer-6-text{
+        display: none;
+    }
+
+    .footer-2, .footer-3, .footer-4, .footer-5, .footer-6{
+        position: relative;
+    }
+    .ri-arrow-right-s-line{
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .footer-1-slack-icon{
+        margin: 0 0 1.5rem -0.7rem;
+    }
+    .footer-1-slack-icon img{
+        width: 5rem;
+    }
+    /* END OF FAVOUR- FOOTER */
+
+}
+
+
+
+
