@@ -745,7 +745,7 @@ color: var(--highlight-color);
 }
 /* END OF JOY'S STYLING - section seven */
 /*joy new stylying  */
-.new-seven{
+/* .new-seven{
     padding: 30px;
     position:relative;
     background-color: #f4ede4 ;
@@ -875,12 +875,12 @@ color: var(--highlight-color);
         /* overflow-x: hidden;
      scroll-behavior: smooth;
       scroll-snap-type: x mandatory; */
-    }
+    
     /* .card{
         max-width:285px;
     } */
     
-.head h2{
+/* .head h2{
     padding:2px;
     font-size: 25px;
     justify-content: center;
@@ -904,7 +904,7 @@ color: var(--highlight-color);
     background-color: #611f69;
 }
 
-}
+} */ 
 /* end of Joy new styling */
 
 
@@ -1368,6 +1368,7 @@ color: var(--highlight-color);
         flex-direction: column;
         width: 100%;
         padding: 0 1rem 0 0.5rem;
+
     }
     .footer-icons{
         gap: 5rem;
@@ -1413,6 +1414,7 @@ color: var(--highlight-color);
     }
     .footer-1-slack-icon img{
         width: 5rem;
+        margin: 3rem 0 0 0;
     }
     /* END OF FAVOUR- FOOTER */
 }
