@@ -388,7 +388,145 @@ padding: 2rem;
 /*END OF BARAKATS'S STYLING  */
 
 /* BEGINNING OF BUKOLA'S STYLING */
+.video-section {
+    background-color: #f4ede4;
+}
+.box-1 {
+    background-color: #f4ede4;
+    color: #f4ede4;
+    font-weight: 500;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    border: solid #f4ede4;
+}
+.beginning {
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    line-height: 1.125;
+    letter-spacing: 2px;
+}
+.logos ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border: 2px solid;
+    flex-direction: row;
+}
+.nasa {
+    width: 50px;
+    height: 40px;
+}
+.logos {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
 
+
+.box2-flex {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.box3-flex {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.box4-flex {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inner-container {
+    padding: 50px;
+    max-width: 50rem;
+    width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+.editvideo3 {
+    width: 90rem;
+}
+
+a {
+    position: relative;
+    color: #1264a3;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1264a3;
+    transition: width 0.3s;
+}
+a:hover::after {
+    width: 100%;
+}
+
+.word-container1 {
+    padding-bottom: 15px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.sentence1 {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    
+}
+.sentence1 p {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .box2-flex {
+        flex-direction: column-reverse;
+    }
+
+    .box3-flex {
+        flex-direction: column-reverse;
+    }
+
+    .box4-flex {
+        flex-direction: column-reverse;
+    }
+
+    .inner-container {
+        width: 80%;
+    }
+
+    .logos ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 
 /* END OF BUKOLA'S STYLING */
@@ -606,7 +744,78 @@ padding: 2rem;
 
 
 /* ONIZE ALIYU'S SECTION - SECTION SIX */
+.video-section1 {
+    background-color: #FFFFFF;
+}
+.box5-flex {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 40px;
+}
+video {
+    max-width: 100%;
+}
+.inner-container2 {
+    padding: 50px;
+    max-width: 50rem;
+    width: 100%;
+    
+}
+a {
+    position: relative;
+    color: #1264a3;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    text-decoration: none;
+}
 
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1264a3;
+    transition: width 0.3s;
+}
+a:hover::after {
+    width: 100%;
+}
+.word-container2 {
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+.name{
+    font-size: 16px;
+    font-weight: 700;
+}
+.position {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+h4{
+    font-style: italic;
+    /* Arial, Helvetica, sans-serif; */
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    
+}
+.editvideo4 {
+    width: 90rem;
+    border-bottom-right-radius: 47%;
+    border-top-right-radius: 47%;
+}
+.remarks{
+    font-weight: 400;
+    font-size: small;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 /*END OF ONIZE ALIYU'S PART -  SECTION SIX */
 
