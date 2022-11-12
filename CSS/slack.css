@@ -747,14 +747,15 @@ color: var(--highlight-color);
 
 /* BEGINNING OF HAPPINESS'S STYLING - SECTION-EIGHT*/
 .section-eight{
-    padding:7rem 0 7rem 0;
-    background-color: #4A154B;
+    padding:5rem 0 5rem 0;
+    min-height: 370px;
+    background-color: #4a154b;
     color: #fff;
-    border-radius: 0 0 47% 45%;
+    clip-path: ellipse(75% 100% at center top);
 }
 
 .section-eight h2{
-    margin: 0 0 2rem 0;
+    margin: 0 0 2.3rem 0;
 }
 
 .workspacebtn-part{
@@ -773,7 +774,7 @@ color: var(--highlight-color);
     color: var(--purple);
     background-color: var(--white);
     border: 1px solid var(--purple);
-    padding: 20px 40px;
+    padding: 20px 44px;
     font-size: 12px;
     font-weight: 900;
     border-radius: 5px;
@@ -789,7 +790,7 @@ color: var(--highlight-color);
     border: 1px solid var(--white);
     font-size: 12px;
     font-weight: 900;
-    padding: 20px 40px;
+    padding: 20px 44px;
     border-radius: 5px;
 }
 
