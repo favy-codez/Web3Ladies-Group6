@@ -746,8 +746,16 @@ color: var(--highlight-color);
 
 
 /* BEGINNING OF HAPPINESS'S STYLING - SECTION-EIGHT*/
+.section-eight{
+    padding: 5rem 0;
+    background-color: #4A154B;
+    color: #fff;
+}
 
-
+.workspacebtn-part{
+    display: flex;
+    gap: 5px;
+}
 
 /* END OF HAPPINESS'S STYLING-  */
 
