@@ -747,14 +747,54 @@ color: var(--highlight-color);
 
 /* BEGINNING OF HAPPINESS'S STYLING - SECTION-EIGHT*/
 .section-eight{
-    padding: 5rem 0;
+    padding:7rem 0 7rem 0;
     background-color: #4A154B;
     color: #fff;
+    border-radius: 0 0 47% 45%;
+}
+
+.section-eight h2{
+    margin: 0 0 2rem 0;
 }
 
 .workspacebtn-part{
     display: flex;
-    gap: 5px;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sales-btn,.Workspace-btn {
+    text-align: center;
+    
+}
+
+.Sales-btn{
+    color: var(--purple);
+    background-color: var(--white);
+    border: 1px solid var(--purple);
+    padding: 20px 40px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.Sales-btn:hover{
+    border: 1.3px solid var(--purple);
+}
+
+.Workspace-btn{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    font-size: 12px;
+    font-weight: 900;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.Workspace-btn:hover{
+    border: 1.3px solid var(--white);
 }
 
 /* END OF HAPPINESS'S STYLING-  */
