@@ -747,6 +747,7 @@ color: var(--highlight-color);
 
 /* BEGINNING OF HAPPINESS'S STYLING - SECTION-EIGHT*/
 .section-eight{
+    background-image: url(/80588/spacesuit/source/images/backgrounds/bg-halftone-black-20p@2x.png);
     padding:5rem 0 5rem 0;
     min-height: 370px;
     background-color: #4a154b;
