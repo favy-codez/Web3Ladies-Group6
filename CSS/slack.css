@@ -3,14 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* styling for horizontal line */
-body{
-    /* overflow-x: hidden; */
-    font-family: 'Roboto', sans-serif;
-}
 hr{
     display: block;
     margin-left: 5%;
@@ -1142,7 +1138,7 @@ color: var(--highlight-color);
         padding: 0;
     }
     .buttons-sec5{
-        align-items: unset;
+        align-items: unset; 
         flex-direction: column;
         gap: 20px;
         text-align: center;
@@ -1150,7 +1146,7 @@ color: var(--highlight-color);
         justify-content: center;
     }
     .section-five-button1{
-        width: 60%;
+        width: 0%;
         height: 57px;
         
     }
@@ -1174,7 +1170,7 @@ color: var(--highlight-color);
         padding: 19px 20px;
         font-size: .875rem;
         height: 57px;
-        width: 345px;
+        width: 345px; 
         letter-spacing: 1px;
     }
     .section-five-partB{
@@ -1252,9 +1248,10 @@ color: var(--highlight-color);
         width: 5rem;
     }
     /* END OF FAVOUR- FOOTER */
-
 }
-
-
+@media screen and (max-width:300px){
+    /* media query for section-five (favour) */
+    
+}
 
 
