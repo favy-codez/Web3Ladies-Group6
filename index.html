@@ -11,6 +11,8 @@
     <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/slack.css">
+    <!-- pagination-lib -->
+    <link rel="stylesheet" href="lib/swipper.min.css"/>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -258,8 +260,72 @@
                 </div>
               </div>
             </div>
-        </section>
+        </section> 
         <!--END OF  JOY'S SECTION --> 
+        <!-- NEW JOY -->
+        <section class="new-seven">
+          <div class="sect-seven" id="cards">
+            <div class="head">
+              <h2>Take a deeper dive into a new way to work</h2>
+            </div>
+            <div class="card-list swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div  class="card swiper-slide" id="card-1" >
+                  <div>
+                    <span>Collection</span>
+                    <h3>Slack as your digital HQ</h3>
+                  </div>
+                  <img src="IMAGES/img-promo-01.png" alt="">
+                  <div class="bottom-flex">
+                    <span>Read more</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+                <div class="card swiper-slide" id="card-2">
+                  <img src="IMAGES/img-promo-02.jpg" alt="">
+                  <div>
+                    <span>Resource</span>
+                    <h3>See how others are building their digital HQ</h3>
+                  </div>
+                  <div class="bottom-flex">
+                    <span>Read more</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#1264A3" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+                <div class="card swiper-slide" id="card-3">
+                  <img src="IMAGES/img-promo-03.png" alt="">
+                  <div>
+                    <span>Webinar</span>
+                    <h3>Win the battle for talent with a digital HQ</h3>
+                  </div>
+                  <div class="bottom-flex">
+                    <span>Watch now</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#1264A3" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+                <div class="card swiper-slide" id="card-4">
+                  <img src="IMAGES/img-promo-04.jpg" alt="">
+                  <div>
+                    <span>E-book</span>
+                    <h3>Reinventing work: New imperatives for the future of working</h3>
+                  </div>
+                  <div class="bottom-flex">
+                    <span>Get E-book</span>
+                    <svg viewBox="0 0 25 14" xmlns="http://www.w3.org/2000/svg"><g stroke="#1264A3" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M1.548 7h21.904"/><path stroke-linejoin="round" d="M17 1l7 6-7 6"/></g></svg>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+            <div class="swiper-pagination swiper-pagination-clickable">
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+              <span class="swiper-pagination-bullet"></span>
+              <span class="swiper-pagination-bullet" ></span>
+              <span class="swiper-pagination-bullet"></span>
+            </div>
+          </div>
+        </section>
 
         <!-- HAPPINESS'S SECTION -->
         <!-- Welcome to your new digital HQ -->
@@ -377,6 +443,16 @@
     </footer>
     <!--END OF FAVOUR'S SECTION -->
     <!-- Javascript -->
+    <script src="lib/swipper.min.js"></script>
+    <script>
+      //  Initialize Swiper
+        let swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
     <script src="./JS/slack.js"></script>
 </body>
 </html>
