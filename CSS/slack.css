@@ -745,13 +745,14 @@ color: var(--highlight-color);
 /* END OF JOY'S STYLING - section seven */
 
 
-/* BEGINNING OF HAPPINESS'S STYLING - SECTION-EIGHT*/
+/* BEGINNING OF FAVOUR'S STYLING - SECTION-EIGHT*/
 .section-eight{
     background-image: url(/80588/spacesuit/source/images/backgrounds/bg-halftone-black-20p@2x.png);
     padding:5rem 0 5rem 0;
     min-height: 370px;
     background-color: #4a154b;
     color: #fff;
+    text-align: center;
     clip-path: ellipse(75% 100% at center top);
 }
 
@@ -768,7 +769,6 @@ color: var(--highlight-color);
 
 .Sales-btn,.Workspace-btn {
     text-align: center;
-    
 }
 
 .Sales-btn{
@@ -799,7 +799,7 @@ color: var(--highlight-color);
     border: 1.3px solid var(--white);
 }
 
-/* END OF HAPPINESS'S STYLING-  */
+/* END OF FAVOUR'S SECTION-8 STYLING-  */
 
 
 /* FAVOURS STYLING - FOOTER */
@@ -929,6 +929,21 @@ color: var(--highlight-color);
 /*****************************************MEDIA QUERY SECTION ********************************************************/
 
 @media screen and (max-width:992px){
+    /* media query for section-eight (favour) */
+    .section-eight h2 {
+        font-size: 3.5rem;
+    }
+    .workspacebtn-part{
+        flex-direction: column;
+    }
+    .Sales-btn{
+        width: 80%;
+    }
+    .Workspace-btn{
+        width: 80%;
+    }
+
+    /* END of media query for section-eight (favour) */
     /* BEGINNING OF FAVOUR- SECTION FIVE */
     .handshake , .girl-laptop, .barChart, .padlock, .emoji-1, .chart{
         display: none;
