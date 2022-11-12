@@ -11,7 +11,7 @@ https://slack.com/
 https://github.com/
 
 ## Links
-* Live Site URL: 
+* Live Site URL: https://slack-group-six.netlify.app/
 
 ## Contributors
 Team members:
