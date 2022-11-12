@@ -79,7 +79,6 @@ nav{
     font-size: 1.5rem;
 }
 .collapsible{
-    
     background-color: var(--gray);
     /* padding: 2rem; */
     position: absolute;
@@ -639,10 +638,10 @@ padding: 2rem;
     margin-bottom: 1.5rem;
     cursor: pointer;
 }
+
 .ccard:hover{ 
     transition: transform 1s ease-in-out; 
     transform: scale(1.1,1.1);
-
 }
 .c-one{
     background-color: var(--bg-color);
@@ -810,7 +809,7 @@ color: var(--highlight-color);
 }
 
 .footerPartB-a p{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 800;
 }
 
@@ -862,6 +861,12 @@ color: var(--highlight-color);
 
 #footer-change div{
     line-height: 25px;
+    font-size: 12px;
+    font-weight: 1000;
+}
+
+#footer-change:hover{
+    color: #1264B8;
 }
 
 .ri-arrow-right-s-line{
