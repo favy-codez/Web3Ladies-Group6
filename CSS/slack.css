@@ -444,7 +444,6 @@ padding: 2rem;
 }
 .box4-flex {
     font-size: 25px;
-    font-weight: 700;
     margin-bottom: 40px;
     display: flex;
     flex-direction: row;
@@ -452,8 +451,6 @@ padding: 2rem;
 }
 
 .inner-container {
-    padding: 50px;
-    max-width: 50rem;
     width: 100%;
 }
 
@@ -486,7 +483,6 @@ a:hover::after {
 }
 
 .word-container1 {
-    padding-bottom: 15px;
     font-weight: 900;
     font-size: 30px;
 }
@@ -517,7 +513,6 @@ a:hover::after {
     .inner-container {
         width: 80%;
     }
-
     .logos ul {
         display: flex;
         flex-wrap: wrap;
@@ -941,7 +936,6 @@ color: var(--highlight-color);
 .section-seven .pagination div a{
     position: absolute;
     inset: 0;
-    border-radius: 100%;
 }
 
 .section-seven .pagination div a:active{
