@@ -422,7 +422,6 @@ padding: 2rem;
     margin: auto;
 }
 
-
 .box2-flex {
     font-size: 25px;
     font-weight: 700;
@@ -675,6 +674,8 @@ a:hover::after {
 
 .buttons-sec5{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
