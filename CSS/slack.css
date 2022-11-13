@@ -788,7 +788,7 @@ video {
     padding: 0 20px;
     margin-top: 4rem;
 }
-a {
+.inner-container2 a {
     position: relative;
     color: #1264a3;
     font-size: 18px;
@@ -1093,9 +1093,6 @@ color: var(--highlight-color);
     height: 3rem;
     margin-top: 50px;
     align-items: flex-end;
-    
-    
-
 }
 
 .card .bottom-flex span{
@@ -1176,6 +1173,8 @@ color: var(--highlight-color);
 
 .section-eight h2{
     margin: 0 0 2.3rem 0;
+    font-size: 2.8rem;
+    font-weight: 600;
 }
 
 .workspacebtn-part{
@@ -1194,8 +1193,8 @@ color: var(--highlight-color);
     background-color: var(--white);
     border: 1px solid var(--purple);
     padding: 20px 44px;
-    font-size: 12px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 600;
     border-radius: 5px;
 }
 
@@ -1207,8 +1206,8 @@ color: var(--highlight-color);
     background-color: transparent;
     color: var(--white);
     border: 1px solid var(--white);
-    font-size: 12px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 600;
     padding: 20px 44px;
     border-radius: 5px;
 }
@@ -1347,6 +1346,14 @@ color: var(--highlight-color);
 /*****************************************MEDIA QUERY SECTION ********************************************************/
 
 @media screen and (max-width:992px){
+    /*beginning of  media query for bukola's part */
+    .logos{
+        width: 86%;
+    }
+    .box-1{
+        margin-top: 30px;
+    }
+    /* end of media query for bukola's part */
     /* media query for section-eight (favour) */
     .section-eight h2 {
         font-size: 3.5rem;
@@ -1405,6 +1412,20 @@ color: var(--highlight-color);
 }
 
 @media screen and (max-width:768px){
+    /*beginning of  media query for bukola's part */
+    .logos{
+        width: 80%;
+    }
+    .logos ul{
+        gap: 10px;
+    }
+    #logo-sec2{
+        padding-bottom: 30px;
+    }
+    #logo-etsy{
+        margin: 0 auto;
+    }
+    /* end of media query for bukola's part */
     /* media query for section-eight (favour) */
     .section-eight h2{
         font-size: 2.5rem;
@@ -1426,6 +1447,14 @@ color: var(--highlight-color);
 
 }
 @media screen and (max-width:576px){
+    /*beginning of  media query for bukola's part */
+    .logos{
+        width: 70%;
+    }
+    .beginning{
+        font-size: 16px;
+    }
+    /* end of media query for bukola's part */
     /* media query for section-eight (favour) */
     .section-eight h2{
         font-size: 2rem;
@@ -1519,6 +1548,24 @@ color: var(--highlight-color);
 }
 
 @media screen and (max-width:375px){
+    /*beginning of  media query for bukola's part */
+    .logos{
+        width: 80%;
+    }
+    .beginning{
+        font-size: 16px;
+    }
+    .logos ul{
+        gap: 10px;
+    }
+    #logo-sec2{
+        padding-bottom: 20px;
+    }
+    #logo-etsy{
+        padding-top: 15px;
+        margin: 0 auto;
+    } 
+    /* end of media query for bukola's part */
     /* media query for section-eight (favour) */
     .section-eight h2{
         font-size: 2rem;
@@ -1565,6 +1612,12 @@ color: var(--highlight-color);
     .buttons-sec5{
         width: 60%;
         padding: 0 0 0 23px;
+    }
+    #section5-btn-1{
+        width: 100%;
+    }
+    #section5-btn-2{
+        width: 100%;
     }
 
     /* END OF FAVOUR- SECTION FIVE */
