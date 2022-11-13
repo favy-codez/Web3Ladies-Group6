@@ -909,6 +909,7 @@ color: var(--highlight-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 .section-seven .pagination div {
     position: relative;
@@ -941,7 +942,7 @@ color: var(--highlight-color);
     .card-collections{
         grid-auto-flow:row;
         margin-inline:auto;
-        max-width: 60%;
+        max-width: 70%;
         grid-template-columns: repeat(2, 1fr);
        
     }
