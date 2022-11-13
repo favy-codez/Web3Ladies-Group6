@@ -766,7 +766,6 @@ video {
     padding: 50px;
     max-width: 50rem;
     width: 100%;
-    
 }
 a {
     position: relative;
@@ -1527,9 +1526,6 @@ color: var(--highlight-color);
     .buttons-sec5{
         width: 60%;
         padding: 0 0 0 23px;
-    }
-    .section-five-button1 {
-        
     }
 
     /* END OF FAVOUR- SECTION FIVE */
