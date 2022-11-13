@@ -3,14 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Slack-Larsseit","Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* styling for horizontal line */
-body{
-    /* overflow-x: hidden; */
-    font-family: 'Roboto', sans-serif;
-}
 hr{
     display: block;
     margin-left: 5%;
@@ -533,7 +529,7 @@ a:hover::after {
 
 /* FAVOUR- SECTION FIVE */
 .section-five{
-    padding: 3rem 0 6rem 0;
+    padding: 3rem 0 4rem 0;
 }
 
 .section-five-partA{
@@ -665,17 +661,6 @@ a:hover::after {
     width: 550px;
 }
 
-.section5Buttons{
-    display: inline-block;
-}
-
-.buttons-sec5{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-}
-
 .section-five-button1 a{
     background-color: #4A154B;
     color: #fff;
@@ -688,11 +673,28 @@ a:hover::after {
     cursor: pointer;
 }
 
-.section-five-button1 a:hover{
-    background-color: #300b30;
+.buttons-sec5{
+    display: flex;
 }
 
-.section-five-button2 a{
+#section5-btn-1{
+    background-color:#651466 ;
+    color: #fff;
+    border: 1px solid #4A154B;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 33px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#section5-btn-1:hover{
+    background-color: #4A154B;
+    transition: 1s;
+}
+
+#section5-btn-2{
     background-color: transparent;
     color: #4A154B;
     border: 1px solid #4A154B;
@@ -704,8 +706,8 @@ a:hover::after {
     cursor: pointer;
 }
 
-.section-five-button2 a:hover{
-    border: 1.4px solid #39123a;
+#section5-btn-2:hover{
+    border: 1.3px solid #400d40;
 }
 
 .section-five-partB{
@@ -919,8 +921,13 @@ color: var(--highlight-color);
 .section-seven .pagination div a{
     position: absolute;
     inset: 0;
-    background-color: black;
+    border-radius: 100%;
 }
+
+.section-seven .pagination div a:active{
+    background-color: var(--purple);
+}
+
 .section-seven .pagination div:hover{
     background-color: var(--purple);
 }
@@ -953,7 +960,7 @@ color: var(--highlight-color);
 }
 /* END OF JOY'S STYLING - section seven */
 /*joy new stylying  */
-.new-seven{
+/* .new-seven{
     padding: 30px;
     position:relative;
     background-color: #f4ede4 ;
@@ -1083,12 +1090,12 @@ color: var(--highlight-color);
         /* overflow-x: hidden;
      scroll-behavior: smooth;
       scroll-snap-type: x mandatory; */
-    }
+    
     /* .card{
         max-width:285px;
     } */
     
-.head h2{
+/* .head h2{
     padding:2px;
     font-size: 25px;
     justify-content: center;
@@ -1112,7 +1119,7 @@ color: var(--highlight-color);
     background-color: #611f69;
 }
 
-}
+} */ 
 /* end of Joy new styling */
 
 
@@ -1378,7 +1385,6 @@ color: var(--highlight-color);
     /* END OF FAVOUR- FOOTER */
 
 }
-
 @media screen and (max-width:576px){
     /* media query for section-eight (favour) */
     .section-eight h2{
@@ -1391,20 +1397,7 @@ color: var(--highlight-color);
     }
     .buttons-sec5{
         flex-direction: column;
-        gap: 4rem;
-    }
-    .section5Buttons{
-        display: block;
-    }
-    .section-five-button1 {
-        width: 100%;
-    }
-    .section-five-button1 a{
-        padding: 20px 160px;
-    }
-    .section-five-button2 a{
-        padding: 20px 213px;
-        font-size: 16px;
+        gap: 15px;
     }
     .section-five-partB{
         display: block;
@@ -1451,6 +1444,10 @@ color: var(--highlight-color);
     .footer-icons{
         display: flex;
         gap: 7rem;
+    }
+    .footerPartB-a{
+        gap: 2rem;
+        padding: 0 0 5px 0;
     }
     .footerPartB-a p{
         font-size: 12px;
@@ -1512,42 +1509,6 @@ color: var(--highlight-color);
         width: 100%;
         padding: 0;
     }
-    .buttons-sec5{
-        align-items: unset;
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        margin: 3px 15px;
-        justify-content: center;
-    }
-    .section-five-button1{
-        width: 60%;
-        height: 57px;
-        
-    }
-    .section-five-button1 a{
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: .875rem;
-        height: 57px;
-        width: 345px;
-        border: 0px solid white;
-        border-radius: 5px;
-        padding: 19px 40px 20px 40px;
-        letter-spacing: 1px;
-    }
-    .section-five-button2{
-        width: 60%;
-        height: 57px;
-    }
-    .section-five-button2 a{
-        display: inline-block;
-        padding: 19px 20px;
-        font-size: .875rem;
-        height: 57px;
-        width: 345px;
-        letter-spacing: 1px;
-    }
     .section-five-partB{
         display: flex;
         flex-direction: column;
@@ -1561,6 +1522,14 @@ color: var(--highlight-color);
     #section-five-text-2, #section-five-text-3, #section-five-text-4{
         width: 190px;
     }
+    .buttons-sec5{
+        width: 60%;
+        padding: 0 0 0 23px;
+    }
+    .section-five-button1 {
+        
+    }
+
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
@@ -1575,7 +1544,8 @@ color: var(--highlight-color);
     .footerPartA{
         flex-direction: column;
         width: 100%;
-        padding: 0 1rem 0 0.5rem;
+        padding: 1.4rem 1rem 10px 0.5rem;
+        gap: 10px;
     }
     .footer-icons{
         gap: 5rem;
@@ -1621,11 +1591,22 @@ color: var(--highlight-color);
     }
     .footer-1-slack-icon img{
         width: 5rem;
+        margin: 3rem 0 0 0;
     }
     /* END OF FAVOUR- FOOTER */
-
 }
-
-
+@media screen and (max-width:300px){
+    /* media query for section-five (favour) */
+    .buttons-sec5{
+        width: 50%;
+        padding: 0 0 0 15px;
+    }
+    #section5-btn-1{
+        font-size: 10px;
+    }
+    #section5-btn-2{
+        font-size: 10px;
+    }
+}
 
 
