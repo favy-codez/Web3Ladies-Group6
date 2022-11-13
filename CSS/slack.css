@@ -143,7 +143,9 @@ transform:translateX(0);
 .menu-link:hover {
     text-decoration: underline;
 }
-.signIn{display: none;}
+.signIn{
+    display: none;
+}
 /* hero */
 .iosTitle{
     margin-bottom: 2rem;
@@ -805,9 +807,9 @@ a::after {
     background: #1264a3;
     transition: width 0.3s;
 }
-a:hover::after {
+/* a:hover::after {
     width: 100%;
-}
+} */
 .word-container2 {
     margin-bottom: 10px;
 
@@ -1544,7 +1546,7 @@ color: var(--highlight-color);
     }
     /* END OF FAVOUR- FOOTER */
 }
-@media screen and (max-width:412px){
+@media screen and (max-width:416px){
     .beginning{
         padding: 0 10px;
         line-height: 1.5rem;
@@ -1574,7 +1576,7 @@ color: var(--highlight-color);
         width: 80%;
     }
     .footerPartA{
-        padding: 4rem 1rem 2rem 1rem;
+        padding: 4rem 1rem 1rem 1rem;
     }
     .section-eight{
         clip-path: ellipse(105% 100% at center top);
