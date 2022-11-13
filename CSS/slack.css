@@ -523,17 +523,6 @@ padding: 2rem;
     width: 550px;
 }
 
-.section5Buttons{
-    display: inline-block;
-}
-
-.buttons-sec5{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-}
-
 .section-five-button1 a{
     background-color: #4A154B;
     color: #fff;
@@ -546,11 +535,28 @@ padding: 2rem;
     cursor: pointer;
 }
 
-.section-five-button1 a:hover{
-    background-color: #300b30;
+.buttons-sec5{
+    display: flex;
 }
 
-.section-five-button2 a{
+#section5-btn-1{
+    background-color:#651466 ;
+    color: #fff;
+    border: 1px solid #4A154B;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 33px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#section5-btn-1:hover{
+    background-color: #4A154B;
+    transition: 1s;
+}
+
+#section5-btn-2{
     background-color: transparent;
     color: #4A154B;
     border: 1px solid #4A154B;
@@ -562,8 +568,8 @@ padding: 2rem;
     cursor: pointer;
 }
 
-.section-five-button2 a:hover{
-    border: 1.4px solid #39123a;
+#section5-btn-2:hover{
+    border: 1.3px solid #400d40;
 }
 
 .section-five-partB{
@@ -1182,20 +1188,7 @@ color: var(--highlight-color);
     }
     .buttons-sec5{
         flex-direction: column;
-        gap: 4rem;
-    }
-    .section5Buttons{
-        display: block;
-    }
-    .section-five-button1 {
-        width: 100%;
-    }
-    .section-five-button1 a{
-        padding: 20px 160px;
-    }
-    .section-five-button2 a{
-        padding: 20px 213px;
-        font-size: 16px;
+        gap: 15px;
     }
     .section-five-partB{
         display: block;
@@ -1307,42 +1300,6 @@ color: var(--highlight-color);
         width: 100%;
         padding: 0;
     }
-    .buttons-sec5{
-        align-items: unset; 
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        margin: 3px 15px;
-        justify-content: center;
-    }
-    .section-five-button1{
-        width: 0%;
-        height: 57px;
-        
-    }
-    .section-five-button1 a{
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: .875rem;
-        height: 57px;
-        width: 345px;
-        border: 0px solid white;
-        border-radius: 5px;
-        padding: 19px 40px 20px 40px;
-        letter-spacing: 1px;
-    }
-    .section-five-button2{
-        width: 60%;
-        height: 57px;
-    }
-    .section-five-button2 a{
-        display: inline-block;
-        padding: 19px 20px;
-        font-size: .875rem;
-        height: 57px;
-        width: 345px; 
-        letter-spacing: 1px;
-    }
     .section-five-partB{
         display: flex;
         flex-direction: column;
@@ -1356,6 +1313,14 @@ color: var(--highlight-color);
     #section-five-text-2, #section-five-text-3, #section-five-text-4{
         width: 190px;
     }
+    .buttons-sec5{
+        width: 60%;
+        padding: 0 0 0 23px;
+    }
+    .section-five-button1 {
+        
+    }
+
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
@@ -1423,13 +1388,15 @@ color: var(--highlight-color);
 }
 @media screen and (max-width:300px){
     /* media query for section-five (favour) */
-    .section-five-button1 a{
-        padding: 19px 10px 20px 10px;
-        width: 260px;
+    .buttons-sec5{
+        width: 50%;
+        padding: 0 0 0 15px;
     }
-    .section-five-button2 a{
-        display: block;
-        width: 260px;
+    #section5-btn-1{
+        font-size: 10px;
+    }
+    #section5-btn-2{
+        font-size: 10px;
     }
 }
 
