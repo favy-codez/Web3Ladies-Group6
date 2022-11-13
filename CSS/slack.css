@@ -423,7 +423,6 @@ padding: 2rem;
     margin: auto;
 }
 
-
 .box2-flex {
     font-size: 25px;
     font-weight: 700;
@@ -676,13 +675,16 @@ a:hover::after {
 
 .buttons-sec5{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #section5-btn-1{
     background-color:#651466 ;
     color: #fff;
     border: 1px solid #4A154B;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     text-decoration: none;
     padding: 15px 33px;
@@ -699,7 +701,7 @@ a:hover::after {
     background-color: transparent;
     color: #4A154B;
     border: 1px solid #4A154B;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     text-decoration: none;
     padding: 15px 33px;
@@ -1544,7 +1546,7 @@ color: var(--highlight-color);
         width: 60%;
         padding: 0 0 0 23px;
     }
-   
+
     /* END OF FAVOUR- SECTION FIVE */
 
     /* MEDIA QUERY FOR  FAVOUR- FOOTER */
