@@ -387,6 +387,7 @@ padding: 2rem;
 /* BEGINNING OF BUKOLA'S STYLING */
 .video-section {
     background-color: #f4ede4;
+    padding: 2rem 0;
 }
 .box-1 {
     background-color: #f4ede4;
@@ -439,12 +440,12 @@ padding: 2rem;
     margin-bottom: 40px;
     display: flex;
     flex-direction: row-reverse;
+    
     align-items: center;
     padding-bottom: 40px;
 }
 .box4-flex {
     font-size: 25px;
-    font-weight: 700;
     margin-bottom: 40px;
     display: flex;
     flex-direction: row;
@@ -452,11 +453,15 @@ padding: 2rem;
 }
 
 .inner-container {
-    padding: 50px;
-    max-width: 50rem;
-    width: 100%;
+    width: 70%;
+    padding: 2rem;
 }
-
+.video1, .video3{
+    padding-right: 1rem;
+}
+.video2{
+    padding-left: 1rem;
+}
 video {
     max-width: 100%;
 }
@@ -464,16 +469,16 @@ video {
     width: 90rem;
 }
 
-a {
+.link {
     position: relative;
     color: #1264a3;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.5px;
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 
-a::after {
+.link::after {
     content: '';
     display: block;
     width: 0;
@@ -481,17 +486,17 @@ a::after {
     background: #1264a3;
     transition: width 0.3s;
 }
-a:hover::after {
+.link:hover::after {
     width: 100%;
 }
 
 .word-container1 {
-    padding-bottom: 15px;
-    font-weight: 900;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 2.5rem;
 }
 .sentence1 {
-    font-weight: 600;
+    font-weight: 100;
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -499,31 +504,45 @@ a:hover::after {
 }
 .sentence1 p {
     margin-bottom: 10px;
+    padding: 1rem 0;
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .box2-flex {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .box3-flex {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .box4-flex {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .inner-container {
-        width: 80%;
+        width: 100%;
+        padding: 0 1rem;
     }
-
     .logos ul {
         display: flex;
         flex-wrap: wrap;
     }
 }
+@media only screen and (max-width: 820px) {
+    .box2-flex {
+        flex-direction: column;
+    }
 
+    .box3-flex {
+        flex-direction: column;
+    }
+
+    .box4-flex {
+        flex-direction: column;
+    }
+}
 
 /* END OF BUKOLA'S STYLING */
 
@@ -941,7 +960,7 @@ color: var(--highlight-color);
 .section-seven .pagination div a{
     position: absolute;
     inset: 0;
-    border-radius: 100%;
+    /* border-radius: 100%; */
 }
 
 .section-seven .pagination div a:active{
@@ -958,6 +977,7 @@ color: var(--highlight-color);
     .pagination div{
         display: none;
     }
+
     .card-collections{
         grid-auto-flow:row;
         margin-inline:auto;
