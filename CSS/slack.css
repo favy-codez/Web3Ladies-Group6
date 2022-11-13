@@ -1425,11 +1425,11 @@ color: var(--highlight-color);
     /* media query for section-five (favour) */
     .section-five-button1 a{
         padding: 19px 10px 20px 10px;
-        width: 270px;
+        width: 260px;
     }
     .section-five-button2 a{
         display: block;
-        width: 270px;
+        width: 260px;
     }
 }
 
