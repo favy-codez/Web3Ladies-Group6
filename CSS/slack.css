@@ -675,13 +675,14 @@ a:hover::after {
 
 .buttons-sec5{
     display: flex;
+    gap: 10px;
 }
 
 #section5-btn-1{
     background-color:#651466 ;
     color: #fff;
     border: 1px solid #4A154B;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     text-decoration: none;
     padding: 15px 33px;
@@ -698,7 +699,7 @@ a:hover::after {
     background-color: transparent;
     color: #4A154B;
     border: 1px solid #4A154B;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     text-decoration: none;
     padding: 15px 33px;
@@ -1527,8 +1528,12 @@ color: var(--highlight-color);
         width: 60%;
         padding: 0 0 0 23px;
     }
-    .section-five-button1 {
-        
+    #section5-btn-1{
+        font-size: 10px;
+        width: 100%;
+    }
+    #section5-btn-2{
+        font-size: 10px;
     }
 
     /* END OF FAVOUR- SECTION FIVE */
