@@ -1170,7 +1170,6 @@ color: var(--highlight-color);
     /* END OF FAVOUR- FOOTER */
 
 }
-
 @media screen and (max-width:576px){
     /* media query for section-eight (favour) */
     .section-eight h2{
@@ -1424,7 +1423,14 @@ color: var(--highlight-color);
 }
 @media screen and (max-width:300px){
     /* media query for section-five (favour) */
-    
+    .section-five-button1 a{
+        padding: 19px 10px 20px 10px;
+        width: 270px;
+    }
+    .section-five-button2 a{
+        display: block;
+        width: 270px;
+    }
 }
 
 
