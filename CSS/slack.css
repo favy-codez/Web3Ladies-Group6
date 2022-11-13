@@ -1593,6 +1593,12 @@ color: var(--highlight-color);
         width: 60%;
         padding: 0 0 0 23px;
     }
+    #section5-btn-1{
+        width: 100%;
+    }
+    #section5-btn-2{
+        width: 100%;
+    }
 
     /* END OF FAVOUR- SECTION FIVE */
 
