@@ -67,6 +67,7 @@ nav{
 }
 .search-icon1,.menu-icon{
     color: var(--white);
+    cursor: pointer;
 }
 .search-icon1{
     margin-right: 1rem;
@@ -75,6 +76,7 @@ nav{
 /* collapsible */
 .close-icon{
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .collapsible{
     background-color: var(--grey);
@@ -255,6 +257,22 @@ padding: 2rem;
 }
 }
 /* header */
+
+@media screen and (max-width:1070px) {
+    .menu-link a{
+        color: var(--black) !important;
+    }
+    .tSales{
+        color: var(--bg-color) !important;
+        border: 1px solid var(--bg-purple) !important;
+    }
+
+    .nWorkspace{
+        background-color: var(--purple) !important;
+        color: var(--white) !important;
+    }
+}
+
 @media only screen and (min-width:1071px) {
     
     nav{
@@ -264,9 +282,10 @@ padding: 2rem;
         justify-content: space-between;
         align-items: center;
     }
-    .logo2,.close-icon,.search-icon1,.menu-icon{
+    .logo2,.close-icon,.search-icon1,.menu-icon, .logo1{
         display: none;
     }
+
     .nav-control{
         flex-basis: 15%;
     }
