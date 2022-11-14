@@ -85,7 +85,7 @@ nav{
     right: 0;
     bottom: 0;
     z-index: 1;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: 200ms ease;
 }
 .hide{
@@ -468,16 +468,16 @@ video {
     width: 90rem;
 }
 
-.link {
+ .link {
     position: relative;
     color: #1264a3;
     font-size: 14px;
     letter-spacing: 0.5px;
     display: block;
     text-decoration: none;
-}
+} 
 
-.link::after {
+ .link::after {
     content: '';
     display: block;
     width: 0;
@@ -486,8 +486,8 @@ video {
     transition: width 0.3s;
 }
 .link:hover::after {
-    width: 100%;
-}
+    width: 50%;
+} 
 
 .word-container1 {
     font-weight: 700;
@@ -953,7 +953,7 @@ color: var(--highlight-color);
 .section-seven .pagination div a{
     position: absolute;
     inset: 0;
-    /* border-radius: 100%; */
+    border-radius: 100%;
 }
 
 .section-seven .pagination div a:active{
@@ -992,6 +992,7 @@ color: var(--highlight-color);
     }
 }
 /* END OF BARAKAT'S STYLING - section seven */
+
 /*joy new stylying  */
 /* .new-seven{
     padding: 30px;
