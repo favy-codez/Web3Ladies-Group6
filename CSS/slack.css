@@ -85,7 +85,7 @@ nav{
     right: 0;
     bottom: 0;
     z-index: 1;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: 200ms ease;
 }
 .hide{
@@ -429,7 +429,6 @@ padding: 2rem;
 .box2-flex {
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -439,10 +438,8 @@ padding: 2rem;
 .box3-flex {
     font-size: 25px;
     font-weight: 700;
-    margin-bottom: 40px;
     display: flex;
-    flex-direction: row-reverse;
-    
+    flex-direction: row-reverse; 
     align-items: center;
     padding-bottom: 40px;
 }
@@ -471,16 +468,16 @@ video {
     width: 90rem;
 }
 
-.link {
+ .link {
     position: relative;
     color: #1264a3;
     font-size: 14px;
     letter-spacing: 0.5px;
     display: block;
     text-decoration: none;
-}
+} 
 
-.link::after {
+ .link::after {
     content: '';
     display: block;
     width: 0;
@@ -489,8 +486,8 @@ video {
     transition: width 0.3s;
 }
 .link:hover::after {
-    width: 100%;
-}
+    width: 50%;
+} 
 
 .word-container1 {
     font-weight: 700;
@@ -781,25 +778,17 @@ video {
     align-items: center;
     padding-bottom: 40px;
 }
-video {
-    max-width: 100%;
-}
-.inner-container2 {
-    max-width: 50rem;
-    width: 100%;  
-    padding: 0 20px;
-    margin-top: 4rem;
-}
+
 .inner-container2 a {
     position: relative;
     color: #1264a3;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.5px;
     display: inline-block;
     text-decoration: none;
-}
+} 
 
-a::after {
+ .inner-container2 a::after {
     content: '';
     display: block;
     width: 0;
@@ -807,9 +796,11 @@ a::after {
     background: #1264a3;
     transition: width 0.3s;
 }
-/* a:hover::after {
+.inner-container2 a:hover::after {
     width: 100%;
-} */
+} 
+
+
 .word-container2 {
     margin-bottom: 10px;
 
@@ -962,7 +953,7 @@ color: var(--highlight-color);
 .section-seven .pagination div a{
     position: absolute;
     inset: 0;
-    /* border-radius: 100%; */
+    border-radius: 100%;
 }
 
 .section-seven .pagination div a:active{
@@ -1001,6 +992,7 @@ color: var(--highlight-color);
     }
 }
 /* END OF BARAKAT'S STYLING - section seven */
+
 /*joy new stylying  */
 /* .new-seven{
     padding: 30px;
